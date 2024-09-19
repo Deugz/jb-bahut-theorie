@@ -1,4 +1,40 @@
-# Le Bahut
+# **Digital Learning Management** 
+
+***
+
+<br>
+
+::::{grid} 2
+:::{grid-item}
+:columns: 8
+
+<p class="p-emphase">👋 <strong>Bienvenue</strong></p>
+
+<p class="p-emphase2">Sur mon journal d'apprentissage digitale </p>
+
+
+:::
+
+:::{grid-item}
+:columns: 4
+
+```{image} _static/Images/profile-pic-round.png
+:width: 65%
+:align: center
+
+```
+
+:::
+
+::::
+
+
+```{admonition} Ma formation
+
+Je suis actuellement une formation au Bahut de Nantes pour devenir Digital Learning Manager.
+
+
+```
 
 
 ## Documents

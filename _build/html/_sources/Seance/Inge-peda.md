@@ -45,6 +45,20 @@ Insérer diagrame et référence pour la taxonomie de bloom
 ```
 
 
+```{figure} Docs/Bloom-taxonomy-schema.png
+---
+width: 100%
+name: Bloom-taxonomy
+---
+La taxonomie de Bloom [Source](https://lms.fun-mooc.fr/c4x/ENSCachan/20005/asset/s2_ressourcesutiles_taxonomiedeBloom.pdf)
+```
+
+
+- {ref}`Bloom-taxonomy`
+
+Autre documentation: [ic](https://www.unige.ch/dife/files/3514/5372/9196/Taxonomies-verbes-action_SEA-2015.pdf)
+
+
 
 ## Scéance 4
 

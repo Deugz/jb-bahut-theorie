@@ -1,0 +1,10 @@
+:root {
+    --primary-color: #3498db; /* Couleur principale */
+    --secondary-color: #2ecc71; /* Couleur secondaire */
+    --text-color: #333333; /* Couleur du texte */
+}
+
+
+h1 {
+    color: var(--primary-color); /* Utilise la variable de couleur */
+}

@@ -3,13 +3,12 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="fr" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
-    <title>Ingénierie pédagogique &#8212; My sample book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingénierie pédagogique &#8212; DLM</title>
   
   
   
@@ -35,6 +34,8 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/.ipynb_checkpoints/custom_style-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -54,6 +55,42 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/jb-bahut");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -63,12 +100,14 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Seance/Inge-peda';</script>
+    <link rel="canonical" href="https://deugz.github.io/jb-bahut/_build/html/Seance/Inge-peda.html" />
+    <link rel="shortcut icon" href="../_static/Bahut-logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
     <link rel="next" title="Les mécanismes de l’apprentissage" href="mecanisme-apprentissage.html" />
     <link rel="prev" title="Le Digital Learning" href="IntroDL.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="fr"/>
   </head>
   
   
@@ -76,7 +115,7 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Passer au contenu principal</a>
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -101,8 +140,8 @@ const thebe_selector_output = ".output, .cell_output"
          class="form-control"
          name="q"
          id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
+         placeholder="Search..."
+         aria-label="Search..."
          autocomplete="off"
          autocorrect="off"
          autocapitalize="off"
@@ -147,24 +186,117 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/Encyclopedia-Home/build/html/index.html" title="Home" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-house"></i></span>
+            <label class="sr-only">Home</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/nb-profile/_build/html/intro.html" title="Profile" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-user"></i></span>
+            <label class="sr-only">Profile</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/ab-blog/_website/index.html" title="Blog" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-blog"></i></span>
+            <label class="sr-only">Blog</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/nb-tools/_build/html/intro.html" title="Tools" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-screwdriver-wrench"></i></span>
+            <label class="sr-only">Tools</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io" title="Forum" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-comments"></i></span>
+            <label class="sr-only">Forum</label></a>
+        </li>
+</ul></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../intro.html">
-                    Le Bahut
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Scéances</span></p>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../to-include.html">To Do</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Intro/Intervenants/Intervenants-Main.html">Intervenants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Intro/ecocystem.html">Ecosystème</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Scéances</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="IntroDL.html">Le Digital Learning</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Ingénierie pédagogique</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mecanisme-apprentissage.html">Les mécanismes de l’apprentissage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="IA-intro.html">Introduction à l’IA</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Panormama-outils.html">Panorama des outils numériques en formation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Panormama-outils.html">Outils numériques en formation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="UX.html">UX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UI.html">UI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ressources-chaudes.html">Concevoir des « ressources chaudes »</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Storyline.html">Introduction a Storyline</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Mises en Situations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../MES/Analyse-form.html">Analyse d’une formation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../MES/Amelio-formation.html">Amélioration d’une formation</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Entrainement</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Entrainement/Outils-hebergement.html">Outils d’hébergement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Entrainement/concept-prod-outils.html">Outils de conception et de production</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Entrainement/Genially.html">Atelier Genially</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projet</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Projet/Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/1-Lancement.html">Lancement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/2-Preparation.html">Préparation Interview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/3-Interview.html">Interview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/4-Analyse.html">Analyse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/5-Conception.html">Conception</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/6-Redaction.html">Rédaction / Grains</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/7-Storyboard.html">Storyboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/8-Production.html">Production</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/9-Integration.html">Intégration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/10-Test.html">Bêta-test</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -211,55 +343,8 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<div class="dropdown dropdown-source-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
-    <i class="fab fa-github"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
-   class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="btn__text-container">Repository</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FSeance/Inge-peda.html&body=Your%20issue%20content%20here." target="_blank"
-   class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="btn__text-container">Open issue</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-
-
 <div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
@@ -268,7 +353,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="../_sources/Seance/Inge-peda.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
+   title="Télécharger le fichier source"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -286,7 +371,7 @@ const thebe_selector_output = ".output, .cell_output"
       <li>
 <button onclick="window.print()"
   class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
+  title="Imprimer au format PDF"
   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -306,7 +391,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <button onclick="toggleFullScreen()"
   class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
+  title="Mode plein écran"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
@@ -320,7 +405,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
     <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
     <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
@@ -330,7 +415,7 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
   </button>
 `);
@@ -354,7 +439,7 @@ document.write(`
         <div id="jb-print-toc">
             
             <div>
-                <h2> Contents </h2>
+                <h2> Contenu </h2>
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -375,97 +460,105 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="ingenierie-pedagogique">
-<h1>Ingénierie pédagogique<a class="headerlink" href="#ingenierie-pedagogique" title="Permalink to this heading">#</a></h1>
-<section id="sceance-1">
-<h2>Scéance 1<a class="headerlink" href="#sceance-1" title="Permalink to this heading">#</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="ingenierie-pedagogique">
+<h1>Ingénierie pédagogique<a class="headerlink" href="#ingenierie-pedagogique" title="Lien permanent vers cette rubrique">#</a></h1>
+<div class="section" id="sceance-1">
+<h2>Scéance 1<a class="headerlink" href="#sceance-1" title="Lien permanent vers cette rubrique">#</a></h2>
 <ul class="simple">
-<li><p>24/09/24 aprem</p></li>
+<li>24/09/24 aprem</li>
 </ul>
 <div class="admonition-objectif-s-pedagogique-s admonition">
-<p class="admonition-title">Objectif(s) pédagogique(s)</p>
-<ul class="simple">
-<li><p>Lister les étapes de la méthodologie de réalisation d’un dispositif de formation en ligne</p></li>
-<li><p>Caractériser un besoin en formation</p></li>
+<p class="first admonition-title">Objectif(s) pédagogique(s)</p>
+<ul class="last simple">
+<li>Lister les étapes de la méthodologie de réalisation d’un dispositif de formation en ligne</li>
+<li>Caractériser un besoin en formation</li>
 </ul>
 </div>
-</section>
-<section id="sceance-2">
-<h2>Scéance 2<a class="headerlink" href="#sceance-2" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="sceance-2">
+<h2>Scéance 2<a class="headerlink" href="#sceance-2" title="Lien permanent vers cette rubrique">#</a></h2>
 <ul class="simple">
-<li><p>25/09/24 matin</p></li>
+<li>25/09/24 matin</li>
 </ul>
 <div class="admonition-objectif-s-pedagogique-s admonition">
-<p class="admonition-title">Objectif(s) pédagogique(s)</p>
-<ul class="simple">
-<li><p>Lister les étapes de la méthodologie de réalisation d’un dispositif de formation en ligne</p></li>
-<li><p>Caractériser un besoin en formation</p></li>
+<p class="first admonition-title">Objectif(s) pédagogique(s)</p>
+<ul class="last simple">
+<li>Lister les étapes de la méthodologie de réalisation d’un dispositif de formation en ligne</li>
+<li>Caractériser un besoin en formation</li>
 </ul>
 </div>
-</section>
-<section id="sceance-3">
-<h2>Scéance 3<a class="headerlink" href="#sceance-3" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="sceance-3">
+<h2>Scéance 3<a class="headerlink" href="#sceance-3" title="Lien permanent vers cette rubrique">#</a></h2>
 <ul class="simple">
-<li><p>25/09/24 aprem</p></li>
+<li>25/09/24 aprem</li>
 </ul>
 <div class="admonition-objectif-s-pedagogique-s admonition">
-<p class="admonition-title">Objectif(s) pédagogique(s)</p>
-<ul class="simple">
-<li><p>Distinguer objectif de formation et objectif pédagogique</p></li>
-<li><p>Formuler clairement un objectif pédagogique (en mettant à profit la taxonomie de Bloom)</p></li>
+<p class="first admonition-title">Objectif(s) pédagogique(s)</p>
+<ul class="last simple">
+<li>Distinguer objectif de formation et objectif pédagogique</li>
+<li>Formuler clairement un objectif pédagogique (en mettant à profit la taxonomie de Bloom)</li>
 </ul>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Insérer diagrame et référence pour la taxonomie de bloom</p>
+<p class="first admonition-title">Note</p>
+<p class="last">Insérer diagrame et référence pour la taxonomie de bloom</p>
 </div>
-</section>
-<section id="sceance-4">
-<h2>Scéance 4<a class="headerlink" href="#sceance-4" title="Permalink to this heading">#</a></h2>
+<div class="figure align-default" id="bloom-taxonomy">
+<a class="reference internal image-reference" href="../_images/Bloom-taxonomy-schema.png"><img alt="../_images/Bloom-taxonomy-schema.png" src="../_images/Bloom-taxonomy-schema.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">La taxonomie de Bloom <a class="reference external" href="https://lms.fun-mooc.fr/c4x/ENSCachan/20005/asset/s2_ressourcesutiles_taxonomiedeBloom.pdf" rel="noopener noreferrer" target="_blank">Source</a></span><a class="headerlink" href="#bloom-taxonomy" title="Lien permanent vers cette image">#</a></p>
+</div>
 <ul class="simple">
-<li><p>30/09/24 aprem</p></li>
+<li><a class="reference internal" href="#bloom-taxonomy"><span class="std std-ref">La taxonomie de Bloom Source</span></a></li>
+</ul>
+<p>Autre documentation: <a class="reference external" href="https://www.unige.ch/dife/files/3514/5372/9196/Taxonomies-verbes-action_SEA-2015.pdf" rel="noopener noreferrer" target="_blank">ic</a></p>
+</div>
+<div class="section" id="sceance-4">
+<h2>Scéance 4<a class="headerlink" href="#sceance-4" title="Lien permanent vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li>30/09/24 aprem</li>
 </ul>
 <div class="admonition-objectif-s-pedagogique-s admonition">
-<p class="admonition-title">Objectif(s) pédagogique(s)</p>
-<ul class="simple">
-<li><p>Définir l’évaluation</p></li>
-<li><p>Distinguer 4 niveaux d’évaluation</p></li>
+<p class="first admonition-title">Objectif(s) pédagogique(s)</p>
+<ul class="last simple">
+<li>Définir l’évaluation</li>
+<li>Distinguer 4 niveaux d’évaluation</li>
 </ul>
 </div>
-</section>
-<section id="sceance-5">
-<h2>Scéance 5<a class="headerlink" href="#sceance-5" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="sceance-5">
+<h2>Scéance 5<a class="headerlink" href="#sceance-5" title="Lien permanent vers cette rubrique">#</a></h2>
 <p><strong>Blitz Formation</strong></p>
 <ul class="simple">
-<li><p>01/10/24 journée</p></li>
+<li>01/10/24 journée</li>
 </ul>
 <div class="admonition-objectif-s-pedagogique-s admonition">
-<p class="admonition-title">Objectif(s) pédagogique(s)</p>
-<ul class="simple">
-<li><p>Définir chaque étape du modèle ADDIE</p></li>
-<li><p>Caractériser un besoin en formation</p></li>
-<li><p>Concevoir un déroulé pédagogique</p></li>
-<li><p>Mettre à profit la taxonomie de Bloom et formuler clairement un objectif pédagogique</p></li>
+<p class="first admonition-title">Objectif(s) pédagogique(s)</p>
+<ul class="last simple">
+<li>Définir chaque étape du modèle ADDIE</li>
+<li>Caractériser un besoin en formation</li>
+<li>Concevoir un déroulé pédagogique</li>
+<li>Mettre à profit la taxonomie de Bloom et formuler clairement un objectif pédagogique</li>
 </ul>
 </div>
-</section>
-<section id="sceance-6">
-<h2>Scéance 6<a class="headerlink" href="#sceance-6" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="sceance-6">
+<h2>Scéance 6<a class="headerlink" href="#sceance-6" title="Lien permanent vers cette rubrique">#</a></h2>
 <ul class="simple">
-<li><p>02/10/24 matin</p></li>
+<li>02/10/24 matin</li>
 </ul>
 <div class="admonition-objectif-s-pedagogique-s admonition">
-<p class="admonition-title">Objectif(s) pédagogique(s)</p>
-<ul class="simple">
-<li><p>Définir chaque étape du modèle ADDIE</p></li>
-<li><p>Caractériser un besoin en formation</p></li>
-<li><p>Mettre à profit la taxonomie de Bloom et formuler clairement un objectif pédagogique</p></li>
-<li><p>Distinguer chacun des supports en formation</p></li>
-<li><p>Identifier la posture de formateur à adopter</p></li>
+<p class="first admonition-title">Objectif(s) pédagogique(s)</p>
+<ul class="last simple">
+<li>Définir chaque étape du modèle ADDIE</li>
+<li>Caractériser un besoin en formation</li>
+<li>Mettre à profit la taxonomie de Bloom et formuler clairement un objectif pédagogique</li>
+<li>Distinguer chacun des supports en formation</li>
+<li>Identifier la posture de formateur à adopter</li>
 </ul>
 </div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -500,18 +593,18 @@ document.write(`
 <div class="prev-next-area">
     <a class="left-prev"
        href="IntroDL.html"
-       title="previous page">
+       title="page précédente">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-subtitle">précédent</p>
         <p class="prev-next-title">Le Digital Learning</p>
       </div>
     </a>
     <a class="right-next"
        href="mecanisme-apprentissage.html"
-       title="next page">
+       title="page suivante">
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">suivant</p>
         <p class="prev-next-title">Les mécanismes de l’apprentissage</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
@@ -530,7 +623,7 @@ document.write(`
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
+    <i class="fa-solid fa-list"></i> Contenu
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
@@ -554,20 +647,13 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+Par Vincent Deguin (with ❤️)
 </p>
 
   </div>
   
   <div class="footer-item">
     
-  <p class="copyright">
-    
-      © Copyright 2022.
-      <br/>
-    
-  </p>
-
   </div>
   
   <div class="footer-item">
