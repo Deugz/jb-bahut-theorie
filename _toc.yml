@@ -1,0 +1,46 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: ""
+    chapters:
+    - file: to-include
+  - caption: Introduction
+    chapters:
+    - file: Intro/Intervenants/Intervenants-Main
+  - caption: Scéances
+    chapters:
+    - file: Seance/IntroDL
+    - file: Seance/Inge-peda
+    - file: Seance/mecanisme-apprentissage
+    - file: Seance/IA-intro
+    - file: Seance/Panormama-outils
+    - file: Seance/UX
+    - file: Seance/UI
+    - file: Seance/Ressources-chaudes
+    - file: Seance/Storyline
+  - caption: Mises en Situations
+    chapters:
+    - file: MES/Analyse-form
+    - file: MES/Amelio-formation
+  - caption: Entrainement
+    chapters:
+    - file: Entrainement/Outils-hebergement
+    - file: Entrainement/concept-prod-outils 
+    - file: Entrainement/Genially
+  - caption: Projet
+    chapters:
+    - file: Projet/Creation-module-e-learning/E-learning-Main
+      sections:
+      - file: Projet/Creation-module-e-learning/1-Lancement
+      - file: Projet/Creation-module-e-learning/2-Preparation
+      - file: Projet/Creation-module-e-learning/3-Interview
+      - file: Projet/Creation-module-e-learning/4-Analyse
+      - file: Projet/Creation-module-e-learning/5-Conception
+      - file: Projet/Creation-module-e-learning/6-Redaction
+      - file: Projet/Creation-module-e-learning/7-Storyboard
+      - file: Projet/Creation-module-e-learning/8-Production
+      - file: Projet/Creation-module-e-learning/9-Integration
+      - file: Projet/Creation-module-e-learning/10-Test
