@@ -1,0 +1,818 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="fr" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seminaire 1 &#8212; DLM</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/.ipynb_checkpoints/custom_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/jb-bahut");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Webinaires/Seminaire1';</script>
+    <link rel="canonical" href="https://deugz.github.io/jb-bahut/_build/html/Webinaires/Seminaire1.html" />
+    <link rel="shortcut icon" href="../_static/Bahut-logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Digiscreen" href="../Tests/Digiscreen.html" />
+    <link rel="prev" title="Bêta-test" href="../Projet/Creation-module-e-learning/10-Test.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/Bahut-logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/Bahut-logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/Encyclopedia-Home/build/html/index.html" title="Home" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-house"></i></span>
+            <label class="sr-only">Home</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/nb-profile/_build/html/intro.html" title="Profile" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-user"></i></span>
+            <label class="sr-only">Profile</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/ab-blog/_website/index.html" title="Blog" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-blog"></i></span>
+            <label class="sr-only">Blog</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/nb-tools/_build/html/intro.html" title="Tools" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-screwdriver-wrench"></i></span>
+            <label class="sr-only">Tools</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io" title="Forum" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-comments"></i></span>
+            <label class="sr-only">Forum</label></a>
+        </li>
+</ul></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../to-include.html">To Do</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Intro/Intervenants/Intervenants-Main.html">Intervenants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Intro/ecocystem.html">Ecosystème</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Scéances</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Seance/IntroDL/IntroDL.html">Le Digital Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Seance/Inge-Peda/Inge-peda.html">Ingénierie pédagogique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Seance/mecanisme-apprentissage.html">Les mécanismes de l’apprentissage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Seance/IA-intro.html">Introduction à l’IA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Seance/Panormama-outils.html">Outils numériques en formation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Seance/Design/Design-main.html">Design</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Seance/Design/UX.html">UX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Seance/Design/UI.html">UI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Seance/Ressources-chaudes.html">Concevoir des « ressources chaudes »</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Seance/Storyline.html">Introduction a Storyline</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Mises en Situations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../MES/Analyse-form.html">Analyse d’une formation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../MES/Amelio-formation.html">Amélioration d’une formation</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Entrainement</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Entrainement/Outils-hebergement.html">Outils d’hébergement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Entrainement/concept-prod-outils.html">Outils de conception et de production</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Entrainement/Genially.html">Atelier Genially</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projet</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Projet/Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/1-Lancement.html">Lancement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/2-Preparation.html">Préparation Interview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/3-Interview.html">Interview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/4-Analyse.html">Analyse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/5-Conception.html">Conception</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/6-Redaction.html">Rédaction / Grains</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/7-Storyboard.html">Storyboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/8-Production.html">Production</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/9-Integration.html">Intégration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/10-Test.html">Bêta-test</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Séminaires</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Seminaire 1</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tests</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Tests/Digiscreen.html">Digiscreen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tests/Klaxoon.html">Klaxoon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tests/Gamma.html">Gamma</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/List.html">Listes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/Glossaire.html">Glossaire</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Webinaires/Seminaire1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Seminaire 1</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepts-cles">Concepts clés</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organiser-session-d-ideatoin">Organiser session d’idéatoin</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-utiliser-le-digital">Comment utiliser le digital</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outils">Outils</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-animer">Comment animer</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presenter-un-contenue-plus-engageant">Présenter un contenue plus engageant</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quel-interet">Quel interet</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recommendation">Recommendation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exemples">Exemples</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sonder-evaluer">Sonder évaluer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recommandations">Recommandations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exemples</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#animer-dynamiser-une-classe-virtuelle">Animer/dynamiser une classe virtuelle</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Quel interet</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Recommandations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Outils</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#takeway">Takeway</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="seminaire-1">
+<h1>Seminaire 1<a class="headerlink" href="#seminaire-1" title="Lien permanent vers cette rubrique">#</a></h1>
+<ul class="simple">
+<li>26/09 11/30</li>
+<li>EdTech GrandOuest</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Checker adhésion</p>
+</div>
+<p class="emphase">Dynamiser vos formations avec le digital</p>
+<p>Hubert Vaudous
+Severine lejeune
+Anne cecile poilvert</p>
+<div class="section" id="concepts-cles">
+<h2>Concepts clés<a class="headerlink" href="#concepts-cles" title="Lien permanent vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li>Diffuser la connaissance</li>
+<li>Ancrage des apprentissage</li>
+<li>Capitaliser sur les les séquences précédentes</li>
+</ul>
+<p>Le numérique permet de garder la trace des contenus et de les avoir au meme endroit!</p>
+<ul class="simple">
+<li>s’intérésser sur la pédagogie</li>
+<li>S’affranchir du temps et de l’espace</li>
+</ul>
+</div>
+<div class="section" id="organiser-session-d-ideatoin">
+<h2>Organiser session d’idéatoin<a class="headerlink" href="#organiser-session-d-ideatoin" title="Lien permanent vers cette rubrique">#</a></h2>
+<p>idéation trés apprécié par formateurs et facilitateurs. Le digital peut aider dans ces sessions</p>
+<ul class="simple">
+<li>Obj: faire réflechir des personnes en groupes (idées, mots clés)</li>
+</ul>
+<p>Permet de fédérer autour d’un projet de manière collective</p>
+<div class="section" id="comment-utiliser-le-digital">
+<h3>Comment utiliser le digital<a class="headerlink" href="#comment-utiliser-le-digital" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>tableau digitalisé</li>
+<li>post it</li>
+<li>nuage de mot</li>
+<li>…</li>
+</ul>
+<p>Préparer chaque séquence d’animation</p>
+<p>Vérifier la maitrise de l’outil par les apprenants</p>
+</div>
+<div class="section" id="outils">
+<h3>Outils<a class="headerlink" href="#outils" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>Miro</li>
+<li>Padlet</li>
+<li>Wooklap</li>
+<li>Klaxcoon</li>
+<li>Mind meister</li>
+<li>Excens</li>
+<li>…</li>
+</ul>
+</div>
+<div class="section" id="comment-animer">
+<h3>Comment animer<a class="headerlink" href="#comment-animer" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>cf photo</p>
+</div>
+</div>
+<div class="section" id="presenter-un-contenue-plus-engageant">
+<h2>Présenter un contenue plus engageant<a class="headerlink" href="#presenter-un-contenue-plus-engageant" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="section" id="quel-interet">
+<h3>Quel interet<a class="headerlink" href="#quel-interet" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>Dynamiser les contenus péda et le rendndre plus ludique</li>
+<li>l’apprenant auteur de sa formation</li>
+<li>fournir une base de connaissance dans laquelle il est possible de se replonger</li>
+</ul>
+</div>
+<div class="section" id="recommendation">
+<h3>Recommendation<a class="headerlink" href="#recommendation" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>format courts</li>
+<li>profiter de la version d’essai pour tester</li>
+<li>consulter forums, tutos pour découvrir fonctionnalités</li>
+<li>faire tester ses productions a plusieurs reprises avant de les deployer (avec plusieurs personnes - plus proche possible des conditions réelles)</li>
+</ul>
+</div>
+<div class="section" id="exemples">
+<h3>Exemples<a class="headerlink" href="#exemples" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>Genially</li>
+<li>Kumullus</li>
+<li>Canva</li>
+<li>La Digitale (package de plusieurs outils)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="sonder-evaluer">
+<h2>Sonder évaluer<a class="headerlink" href="#sonder-evaluer" title="Lien permanent vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li>Interroger les apprenants sur leur ressentie</li>
+<li>Evaluer la réussite d’une formation a tous les niveaux<ul>
+<li>satisgfaction des apprenants</li>
+<li>rétention des connaissances</li>
+<li>mise en pratique en situation de travail</li>
+<li>impact sur les resultats</li>
+</ul>
+</li>
+<li>Question flash (?)</li>
+<li>Quizz</li>
+</ul>
+<div class="section" id="recommandations">
+<h3>Recommandations<a class="headerlink" href="#recommandations" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>préparer a l’avance un déroulé minuté</li>
+<li>préparer chaque séquence d’animation</li>
+<li>apporter des feedbacks dans ses réponses</li>
+<li>…</li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h3>Exemples<a class="headerlink" href="#id1" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>typeform</li>
+<li>quizizz</li>
+<li>kahoot</li>
+<li>wooclap</li>
+</ul>
+</div>
+</div>
+<div class="section" id="animer-dynamiser-une-classe-virtuelle">
+<h2>Animer/dynamiser une classe virtuelle<a class="headerlink" href="#animer-dynamiser-une-classe-virtuelle" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="section" id="id2">
+<h3>Quel interet<a class="headerlink" href="#id2" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>Impliquer les apprenants en se rapprochant d’une experience de classe</li>
+<li>paratger des supports de cours et de présentation</li>
+<li>intéragir de manière publique ou privée</li>
+<li>Organiser des traveaux de groupes</li>
+<li>Utiliser des applications complémentaires</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>Recommandations<a class="headerlink" href="#id3" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>Le format varie en fonction de vos choix<ul>
+<li>webinaire</li>
+<li>td</li>
+<li>classe inversée</li>
+<li>exam orale</li>
+<li>…</li>
+</ul>
+</li>
+<li>Former ses apprenats a l’outil</li>
+<li>se connecter en avance pour anticiper difficultés</li>
+<li>assurer un role de modérateur</li>
+<li>peut etre intense donc assurer des séances de respiration</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>Outils<a class="headerlink" href="#id4" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>Glowbl (France) - a l’air sympa, a tester</li>
+<li>Teams</li>
+<li>Meet</li>
+<li>Zoom</li>
+</ul>
+</div>
+</div>
+<div class="section" id="takeway">
+<h2>Takeway<a class="headerlink" href="#takeway" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Avertissement</p>
+<ul class="last simple">
+<li>Définir d’abbord l’activité péda et ensuite choisir les outils</li>
+<li>Ne pas multiplier les outils<ul>
+<li>Choisir des outils polyvalents (avec lesquels on est a l’aise)</li>
+<li>capitaliser sur le contenu déja produit</li>
+</ul>
+</li>
+<li>Tester avant de les utiliser</li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Webinaires"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../Projet/Creation-module-e-learning/10-Test.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Bêta-test</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../Tests/Digiscreen.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Digiscreen</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepts-cles">Concepts clés</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organiser-session-d-ideatoin">Organiser session d’idéatoin</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-utiliser-le-digital">Comment utiliser le digital</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outils">Outils</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-animer">Comment animer</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presenter-un-contenue-plus-engageant">Présenter un contenue plus engageant</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quel-interet">Quel interet</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recommendation">Recommendation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exemples">Exemples</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sonder-evaluer">Sonder évaluer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recommandations">Recommandations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exemples</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#animer-dynamiser-une-classe-virtuelle">Animer/dynamiser une classe virtuelle</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Quel interet</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Recommandations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Outils</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#takeway">Takeway</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Vincent Deguin (with ❤️)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

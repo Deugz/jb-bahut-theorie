@@ -105,7 +105,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
     <link rel="next" title="Introduction à l’IA" href="IA-intro.html" />
-    <link rel="prev" title="Ingénierie pédagogique" href="Inge-peda.html" />
+    <link rel="prev" title="Ingénierie pédagogique" href="Inge-Peda/Inge-peda.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fr"/>
   </head>
@@ -261,13 +261,16 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Scéances</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="IntroDL.html">Le Digital Learning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Inge-peda.html">Ingénierie pédagogique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IntroDL/IntroDL.html">Le Digital Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Inge-Peda/Inge-peda.html">Ingénierie pédagogique</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Les mécanismes de l’apprentissage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="IA-intro.html">Introduction à l’IA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Panormama-outils.html">Outils numériques en formation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="UX.html">UX</a></li>
-<li class="toctree-l1"><a class="reference internal" href="UI.html">UI</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Design/Design-main.html">Design</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Design/UX.html">UX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Design/UI.html">UI</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Ressources-chaudes.html">Concevoir des « ressources chaudes »</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Storyline.html">Introduction a Storyline</a></li>
 </ul>
@@ -284,7 +287,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Projet</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Projet/Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Projet/Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/1-Lancement.html">Lancement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/2-Preparation.html">Préparation Interview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/3-Interview.html">Interview</a></li>
@@ -297,6 +300,21 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/10-Test.html">Bêta-test</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Séminaires</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Webinaires/Seminaire1.html">Seminaire 1</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tests</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Tests/Digiscreen.html">Digiscreen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tests/Klaxoon.html">Klaxoon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tests/Gamma.html">Gamma</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/List.html">Listes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/Glossaire.html">Glossaire</a></li>
 </ul>
 
     </div>
@@ -443,8 +461,42 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-1">Session 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-2">Session 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-1">Session 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qu-est-ce-que-l-apprentissage">Qu’est-ce que l’apprentissage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-motiver-un-apprenant">Comment motiver un apprenant</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#memorisation">Mémorisation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-2">Session 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#differents-types-de-memoires">Différents types de mémoires</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#memoire-a-court-terme">Mémoire a court terme</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#memoire-long-terme">Mémoire long terme</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#processus-de-memorisation">Processus de mémorisation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#encodage">Encodage</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stockage-et-consolidation">Stockage et consolidation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#restitution">Restitution</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution">Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effets-de-primaute-et-de-recence">Effets de primauté et de récence.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expertise">Expertise</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recommandations">Recommandations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-attention">L’attention</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#attention-divisee">Attention divisée</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rythme-circadien-et-vigilence">Rythme circadien et vigilence</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-cogni-ctml">Theorie cogni … CTML</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-d-incarnation">Théorie d’incarnation</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -466,10 +518,147 @@ document.write(`
 <div class="admonition-objectif-s-pedagogique-s admonition">
 <p class="first admonition-title">Objectif(s) pédagogique(s)</p>
 <ul class="last simple">
-<li>Identifier les mécanismes de l’apprentissage</li>
+<li>reprendre les objectifs (pas tout a fait les bons)</li>
+<li><strong>Identifier</strong> les mécanismes de l’apprentissage</li>
 <li>Lister des principes pour favoriser les mécanismes de l’apprentissage</li>
 <li>Justifier des choix pédagogiques à partir de théories concernant l’apprentissage</li>
 </ul>
+</div>
+<ul class="simple">
+<li>Youri: Thèse siffre (apprentissage multimédia) avec Sydo</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Récupérer les notes</p>
+</div>
+<div class="section" id="qu-est-ce-que-l-apprentissage">
+<h3>Qu’est-ce que l’apprentissage<a class="headerlink" href="#qu-est-ce-que-l-apprentissage" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Exercice ensemble</p>
+</div>
+<p class="emphase"></p>
+<ul class="simple">
+<li>IA permet de générer un aspect social dans l’apprentissage</li>
+</ul>
+<p>cognitif: processus qui permettent de traiter notre environnement (language ..)</p>
+<p>Intelligence: capacité d’adaptation a notre environnement.</p>
+<ul class="simple">
+<li>Métacognition</li>
+</ul>
+<p>Regard sur nos processus d’apprentissage. Comment on apprend</p>
+<p>Confrontation entre ce que l’on sait déja et notre environement</p>
+<ul class="simple">
+<li>Adulte: difficulté a déconstruire un mauvais apprentissage</li>
+</ul>
+<p>Apprentissage reflexif</p>
+<p>innée ou aquis (ex Language vs langue)</p>
+<p>Chercheur: Franck Ramus (Tedx conférence)</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">3 axes</p>
+</div>
+</div>
+<div class="section" id="motivation">
+<h3>Motivation<a class="headerlink" href="#motivation" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Vidéo: Impuissance aprise</p>
+<ul class="last simple">
+<li>Aisance avec le numérique</li>
+<li>Prérequis</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Diagrame des croyance</p>
+<ul class="last simple">
+<li>créer un tab-item avec les différentes experiences associés</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Avertissement</p>
+<ul class="last simple">
+<li>Comment générer un effet Pygmalion dans la classe</li>
+</ul>
+</div>
+<p>Experience effet pygmalion - checker l’experience (marche aussi sur les rats)</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Menace du stéréotype</p>
+</div>
+<p>Les stéréotype sont facilement reproductibles experimentalement lorsqu’on on les introduits dans l’experience.</p>
+<ul class="simple">
+<li>ex: femme au volant</li>
+</ul>
+<div class="section" id="comment-motiver-un-apprenant">
+<h4>Comment motiver un apprenant<a class="headerlink" href="#comment-motiver-un-apprenant" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Plein de théories</p>
+</div>
+<ul class="simple">
+<li>plus interessant pour nous Deci-Rayan 1985</li>
+</ul>
+<p>Besoin de choix, compétence et relation aux autres. Concept de <em>flow</em></p>
+<ul class="simple">
+<li>extrinsèque<ul>
+<li>récompense</li>
+</ul>
+</li>
+</ul>
+<p>A éviter d’utiliser en tant que producteur (manque de créativité car pas intéréssé par l’activité)</p>
+<p>ex: religion chrétienne (je suis gentil pour ne pas aller en enfer)</p>
+<ul class="simple">
+<li>intrinsèque</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Important a déterminer lorsque l’on étudie la cible</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Avertissement</p>
+<p>La gamification (avec gaganant) peut transformer une motivation intrinsèque en extrinsèque</p>
+<ul class="last simple">
+<li>TedX Dan Pink experience de la bougie</li>
+</ul>
+</div>
+<p>Motivation extrinsèque diminue l’abilité à la créativité</p>
+<ul class="simple">
+<li>Engagement situationel<ul>
+<li>sens</li>
+<li>humour</li>
+<li>…</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Règle des 3 F sylvain tillon Tedx</li>
+</ul>
+</div>
+<ul class="simple">
+<li>mémo:</li>
+</ul>
+<p>Autonomie</p>
+<ul class="simple">
+<li>checker <strong>apprentissage par découverte</strong> - checker discord pour ressource</li>
+<li>déconstruire la formation (annoncer le format en début de formation)</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Diagramme de flow</p>
+<ul class="simple">
+<li>Bande fine</li>
+</ul>
+<p class="last">adaptabilité permet de générer un mouvement de flow pour chaqun des apprenants avec des compétences disparates.</p>
+</div>
+</div>
+</div>
+<div class="section" id="memorisation">
+<h3>Mémorisation<a class="headerlink" href="#memorisation" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>La consigne oriente l’attention de nos apprenants</p>
 </div>
 </div>
 <div class="section" id="session-2">
@@ -484,6 +673,150 @@ document.write(`
 <li>Lister des principes pour favoriser les mécanismes de l’apprentissage</li>
 <li>Justifier des choix pédagogiques à partir de théories concernant l’apprentissage</li>
 </ul>
+</div>
+<ul class="simple">
+<li>Suite de Mémorisation</li>
+</ul>
+<div class="section" id="differents-types-de-memoires">
+<h3>Différents types de mémoires<a class="headerlink" href="#differents-types-de-memoires" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Court terme/ long terme</p>
+<p>visuel, tout ca: plutot des canaux d’entrée vers la mémoire</p>
+<div class="section" id="memoire-a-court-terme">
+<h4>Mémoire a court terme<a class="headerlink" href="#memoire-a-court-terme" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>Limité en terme de durée et quantité</p>
+<p>On peut retenir 7 information (+-2). Empan mnésique (miller 1956) -</p>
+<p>Objectif répéter</p>
+<p>chunk - favoriser la catégorisation de l’information - structurer l’information</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Trouver shéma qui explique lien mémoire courte et long terme</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">retrouver vidéo des singes mémoire court terme</p>
+</div>
+<p>Mémoire court terme = mémoire de travail</p>
+</div>
+<div class="section" id="memoire-long-terme">
+<h4>Mémoire long terme<a class="headerlink" href="#memoire-long-terme" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>éléments forts émotionnelements auront plus de facilités a s’ancrer dans la mémoire a long terme</p>
+</div>
+</div>
+<div class="section" id="processus-de-memorisation">
+<h3>Processus de mémorisation<a class="headerlink" href="#processus-de-memorisation" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="section" id="encodage">
+<h4>Encodage<a class="headerlink" href="#encodage" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>Onde cérébrale, on fonction du temp auquel elle se déclenche (tot ou tard), on sait si l’information va etre mémorisé ou pas</p>
+</div>
+<div class="section" id="stockage-et-consolidation">
+<h4>Stockage et consolidation<a class="headerlink" href="#stockage-et-consolidation" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>Réseau de neurone - Association</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Implication péda: l’apprenant arrive toujours avec un background qu’on peut utiliser, des prérequis</p>
+<ul class="last simple">
+<li>biais cognitifs</li>
+<li>questionnaire pour mieux connaitre mon apprenant</li>
+</ul>
+</div>
+<p>A partir d’une 20 d’année, les fonctions cognitifs diminuent</p>
+</div>
+<div class="section" id="restitution">
+<h4>Restitution<a class="headerlink" href="#restitution" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>Fait comprendre au cerveau qu’on a besoin de cette information - evaluation</p>
+</div>
+</div>
+<div class="section" id="distribution">
+<h3>Distribution<a class="headerlink" href="#distribution" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>Microlearning</li>
+</ul>
+</div>
+<div class="section" id="effets-de-primaute-et-de-recence">
+<h3>Effets de primauté et de récence.<a class="headerlink" href="#effets-de-primaute-et-de-recence" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Bien introduire le propos, et la conclusion</p>
+</div>
+<div class="section" id="expertise">
+<h3>Expertise<a class="headerlink" href="#expertise" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>effet inversé de la pédagogie en fonction de l’expertise</p>
+<p>situation de découverte = construction de tes conaissance par toi même</p>
+</div>
+<div class="section" id="recommandations">
+<h3>Recommandations<a class="headerlink" href="#recommandations" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Testing effect</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Créer une boite avec questions que l’on implémente dans différents niveau (peut etre faire avant chaque pause)</p>
+<p class="last">Boite de leitner</p>
+</div>
+</div>
+<div class="section" id="l-attention">
+<h3>L’attention<a class="headerlink" href="#l-attention" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Soigner les consignes</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Inclure les experiences de Youri</p>
+</div>
+<div class="section" id="attention-divisee">
+<h4>Attention divisée<a class="headerlink" href="#attention-divisee" title="Lien permanent vers cette rubrique">#</a></h4>
+</div>
+<div class="section" id="rythme-circadien-et-vigilence">
+<h4>Rythme circadien et vigilence<a class="headerlink" href="#rythme-circadien-et-vigilence" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Checker les méthodes d’entrainement pour augmenter l’attention</p>
+</div>
+<ul class="simple">
+<li>gestion des pauses</li>
+</ul>
+<p>système 1 / système 2</p>
+</div>
+</div>
+<div class="section" id="theorie-cogni-ctml">
+<h3>Theorie cogni … CTML<a class="headerlink" href="#theorie-cogni-ctml" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">cf sydo pour liste d’article</p>
+</div>
+<ul class="simple">
+<li>3 hypothèses</li>
+</ul>
+<p>Charge cognitive</p>
+<p>3 types de cout:</p>
+<ul class="simple">
+<li>charge intrinsèque (ce qui permet de comprendre le materiel d’apprentissage (a vérifier), fonction de l’expertise, un expert mettra moins d’effort)</li>
+<li>charge extrinsèque (exemple, portable quand on conduit, bruit visuel)</li>
+<li>charge pertinente ou utile (permet d’intégrer en mémoire a long terme, appropriation)</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Principe de design associés</p>
+</div>
+<ul>
+<li><p class="first">principe de cohérence</p>
+</li>
+<li><p class="first">principe de personnalisation</p>
+<p>Privilégier le tutoiment</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Outils</p>
+<ul class="last simple">
+<li>Eleven lab, murph, synthésia</li>
+</ul>
+</div>
+<div class="section" id="theorie-d-incarnation">
+<h4>Théorie d’incarnation<a class="headerlink" href="#theorie-d-incarnation" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>…</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>suno</p>
+<ul class="last simple">
+<li>générer une musique (pas mal pour générer des musique pour summariser les concepts clés)</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -520,7 +853,7 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Inge-peda.html"
+       href="Inge-Peda/Inge-peda.html"
        title="page précédente">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
@@ -555,8 +888,42 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-1">Session 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-2">Session 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-1">Session 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qu-est-ce-que-l-apprentissage">Qu’est-ce que l’apprentissage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-motiver-un-apprenant">Comment motiver un apprenant</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#memorisation">Mémorisation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-2">Session 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#differents-types-de-memoires">Différents types de mémoires</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#memoire-a-court-terme">Mémoire a court terme</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#memoire-long-terme">Mémoire long terme</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#processus-de-memorisation">Processus de mémorisation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#encodage">Encodage</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stockage-et-consolidation">Stockage et consolidation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#restitution">Restitution</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution">Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effets-de-primaute-et-de-recence">Effets de primauté et de récence.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expertise">Expertise</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recommandations">Recommandations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-attention">L’attention</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#attention-divisee">Attention divisée</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rythme-circadien-et-vigilence">Rythme circadien et vigilence</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-cogni-ctml">Theorie cogni … CTML</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-d-incarnation">Théorie d’incarnation</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

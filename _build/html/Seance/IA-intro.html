@@ -261,13 +261,16 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Scéances</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="IntroDL.html">Le Digital Learning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Inge-peda.html">Ingénierie pédagogique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IntroDL/IntroDL.html">Le Digital Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Inge-Peda/Inge-peda.html">Ingénierie pédagogique</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mecanisme-apprentissage.html">Les mécanismes de l’apprentissage</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction à l’IA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Panormama-outils.html">Outils numériques en formation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="UX.html">UX</a></li>
-<li class="toctree-l1"><a class="reference internal" href="UI.html">UI</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Design/Design-main.html">Design</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Design/UX.html">UX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Design/UI.html">UI</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Ressources-chaudes.html">Concevoir des « ressources chaudes »</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Storyline.html">Introduction a Storyline</a></li>
 </ul>
@@ -284,7 +287,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Projet</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Projet/Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Projet/Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/1-Lancement.html">Lancement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/2-Preparation.html">Préparation Interview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/3-Interview.html">Interview</a></li>
@@ -297,6 +300,21 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/10-Test.html">Bêta-test</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Séminaires</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Webinaires/Seminaire1.html">Seminaire 1</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tests</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Tests/Digiscreen.html">Digiscreen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tests/Klaxoon.html">Klaxoon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tests/Gamma.html">Gamma</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/List.html">Listes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/Glossaire.html">Glossaire</a></li>
 </ul>
 
     </div>
@@ -420,7 +438,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -436,6 +456,20 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quizz">Quizz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environnement">Environnement:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-learning">E-Learning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#les-grandes-etapes-du-projet">Les grandes étapes du projet</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test">Test</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -458,6 +492,92 @@ document.write(`
 <li>Utiliser chatGPT efficacement (instruction + contexte + format attendu)</li>
 <li>Lister différentes méthodes de prompt engineering</li>
 </ul>
+</div>
+<ul class="simple">
+<li>Seminaire a distance par Sylvain Tillon</li>
+</ul>
+<div class="section" id="quizz">
+<h2>Quizz<a class="headerlink" href="#quizz" title="Lien permanent vers cette rubrique">#</a></h2>
+<p>L’IA ne travail pas de manière autonome (IA forte - n’existe pas encore)</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Réplica: IA qui permet de générer des personalités</p>
+<p class="last">idées: possibilités de s’avatariser pour permettre a nos étudiants de poser des questions ()</p>
+</div>
+<p><strong>Définition</strong></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Etude empathie médecin</p>
+<ul class="last simple">
+<li>a récupérer</li>
+</ul>
+</div>
+<p>Enigma est la première intelligence artifficiel</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Deep blue, kasparove</li>
+<li>AlphaGo</li>
+</ul>
+</div>
+<p>Wondercraft = podcast 100% IA</p>
+<ul class="simple">
+<li>Attention is all you need, 2017</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Base de données d’IA</p>
+<ul class="last simple">
+<li><a class="reference external" href="https://huggingface.co/" rel="noopener noreferrer" target="_blank">Huggingface</a></li>
+</ul>
+</div>
+<ul class="simple">
+<li>mécanisme de fonctionnement de l’IA</li>
+</ul>
+<p>Base d’entrainement n’est pas Open Source</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Récupérer l’article du financial time</p>
+</div>
+</div>
+<div class="section" id="environnement">
+<h2>Environnement:<a class="headerlink" href="#environnement" title="Lien permanent vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li>Production CO2</li>
+<li>Consommation d’eau</li>
+<li>Utilisation des métaux qui se raréfient</li>
+<li></li>
+</ul>
+<ul class="simple">
+<li><a class="reference external" href="http://gandalf.lakera.ai" rel="noopener noreferrer" target="_blank">gandalf.lakera.ai</a>: demander le mdp a Gandalf</li>
+<li>Propriété intelectuelle des contenus générés par IA: Personne</li>
+</ul>
+</div>
+<div class="section" id="e-learning">
+<h2>E-Learning<a class="headerlink" href="#e-learning" title="Lien permanent vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li>Perplexity: définitions sourcés</li>
+<li><a class="reference external" href="https://360.articulate.com/review/content/415ca6f5-8630-44d0-8dc1-a36251dcff67/review" rel="noopener noreferrer" target="_blank">Le E-Learning</a></li>
+</ul>
+<div class="section" id="les-grandes-etapes-du-projet">
+<h3>Les grandes étapes du projet<a class="headerlink" href="#les-grandes-etapes-du-projet" title="Lien permanent vers cette rubrique">#</a></h3>
+</div>
+<div class="section" id="test">
+<h3>Test<a class="headerlink" href="#test" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition-ia-act admonition">
+<p class="first admonition-title">IA Act</p>
+<p class="last">L’AI Act est une proposition de réglementation de l’Union européenne visant à encadrer l’utilisation de l’intelligence artificielle. Il se concentre sur la classification des systèmes d’IA par niveau de risque, avec des exigences stricte en matière de transparence et de supervision humaine pour les applications à haut risque. L’objectif principal est de garantir que l’IA soit utilisée de manière sûre et éthique, tout en favorisant l’innovation. Ce cadre juridique cherche à établir la confiance dans les systèmes d’IA auprès des utilisateurs et du grand public.</p>
+</div>
+<ul class="simple">
+<li>Claude est meilleur que GPT</li>
+<li>Notebooklm: outil génération de podcast a tester</li>
+<li>chatbot: flowise / chatbase (payant)</li>
+<li>seelab (création d’images a partir d’image de référence)</li>
+<li>fiches mémo: gamma</li>
+<li>sous-titre: whisper web (timestamp pas ouf - copié coller le text sur youtube)</li>
+<li>teaser vidéo: Runway</li>
+</ul>
+</div>
 </div>
 </div>
 
@@ -519,6 +639,26 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quizz">Quizz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environnement">Environnement:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-learning">E-Learning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#les-grandes-etapes-du-projet">Les grandes étapes du projet</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test">Test</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -13,13 +13,15 @@ parts:
     - file: Intro/ecocystem
   - caption: Scéances
     chapters:
-    - file: Seance/IntroDL
-    - file: Seance/Inge-peda
+    - file: Seance/IntroDL/IntroDL
+    - file: Seance/Inge-Peda/Inge-peda
     - file: Seance/mecanisme-apprentissage
     - file: Seance/IA-intro
     - file: Seance/Panormama-outils
-    - file: Seance/UX
-    - file: Seance/UI
+    - file: Seance/Design/Design-main
+      sections:
+      - file: Seance/Design/UX
+      - file: Seance/Design/UI
     - file: Seance/Ressources-chaudes
     - file: Seance/Storyline
   - caption: Mises en Situations
@@ -45,3 +47,15 @@ parts:
       - file: Projet/Creation-module-e-learning/8-Production
       - file: Projet/Creation-module-e-learning/9-Integration
       - file: Projet/Creation-module-e-learning/10-Test
+  - caption: Séminaires
+    chapters:
+    - file: Webinaires/Seminaire1
+  - caption: Tests
+    chapters:
+    - file: Tests/Digiscreen
+    - file: Tests/Klaxoon
+    - file: Tests/Gamma
+  - caption: Appendices
+    chapters:
+    - file: Appendices/List
+    - file: Appendices/Glossaire

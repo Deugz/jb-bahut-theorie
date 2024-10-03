@@ -6,12 +6,116 @@
 
 ```{admonition} Objectif(s) pédagogique(s)
 
-- Lister les étapes de la méthodologie de réalisation d'un dispositif de formation en ligne
-- Caractériser un besoin en formation
+- Identifier les besoins de formation
+- S'approprier ...
 
 
 ```
 
+
+### Piloter un projet de formation
+
+```{admonition} Exercice
+
+[Liens](https://docs.google.com/presentation/d/1Ephk903Za39rr5uRHyHwOJNAKOpKYGyz/edit#slide=id.p1)
+
+- Comment (par quelles étapes) sydo est il passé pour réaliser ce module de formation
+
+
+- [La formation](https://elearning.sydo.fr/AFD/Climat/Capsule2/)
+
+```
+
+### Le modèle ADDIE
+
+```{figure} Docs/ADDIE-Capture.png
+---
+width: 100%
+name: ADDIE-method
+---
+Le modèle ADDIE [Source](https://yaplusk.fr/ingenierie-pedagogique-formation/)
+```
+
+- Analyse
+    - Client (culture d'entreprise)
+    - Besoin
+    - décision sur les outils
+       
+- Design
+    - Ma proposition 
+    - Scématique
+    
+```{note}
+
+Co-design: utile surtout dans une production en interne
+
+```
+
+```{note}
+
+Powerpoint partagé avec commentaires du client
+
+
+```
+    
+- Dévelopement
+    - Théorie / Pratique
+    - utilisation Outils
+
+
+```{note}
+
+Capture d'écran de chaque écran
+
+
+```
+
+- Implémentation
+
+
+
+
+- Evaluation
+    - du module
+    - du dispositif de formation
+    
+    
+```{note}
+
+Modèle de Kirkpatrick
+
+```
+
+- Niveau 1: si oui, on continue (si non, se demandé pourquoi et on retravaille le module)
+- 
+
+
+Différence entre ingénieurie de formation et ingénieurie pédagogique
+- Ingénieurie de formation (comprend plusieurs modules pédagogiques)
+
+
+### Le modèle Sydo
+
+```{note}
+
+Onsérer diapo
+
+```
+
+
+### Les Besoins
+
+#### Type de formations
+
+- Formation: aquisition de compétence
+- Information: apprendre plus sur un sujet mais sans formation de besoin d'execution
+- Sensibilisation: identifier un problème et en faire prendre conscience
+
+#### Besoins en formation
+
+fossé entre la ou on est et la ou ils ont besoin d'être.
+
+- Dysfonctionnement ou évolution
 
 ## Scéance 2
 

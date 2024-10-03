@@ -104,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/Bahut-logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="UX" href="UX.html" />
+    <link rel="next" title="Design" href="Design/Design-main.html" />
     <link rel="prev" title="Introduction à l’IA" href="IA-intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fr"/>
@@ -261,13 +261,16 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Scéances</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="IntroDL.html">Le Digital Learning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Inge-peda.html">Ingénierie pédagogique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IntroDL/IntroDL.html">Le Digital Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Inge-Peda/Inge-peda.html">Ingénierie pédagogique</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mecanisme-apprentissage.html">Les mécanismes de l’apprentissage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="IA-intro.html">Introduction à l’IA</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Outils numériques en formation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="UX.html">UX</a></li>
-<li class="toctree-l1"><a class="reference internal" href="UI.html">UI</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Design/Design-main.html">Design</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Design/UX.html">UX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Design/UI.html">UI</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Ressources-chaudes.html">Concevoir des « ressources chaudes »</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Storyline.html">Introduction a Storyline</a></li>
 </ul>
@@ -284,7 +287,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Projet</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Projet/Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Projet/Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/1-Lancement.html">Lancement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/2-Preparation.html">Préparation Interview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/3-Interview.html">Interview</a></li>
@@ -297,6 +300,21 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/10-Test.html">Bêta-test</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Séminaires</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Webinaires/Seminaire1.html">Seminaire 1</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tests</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Tests/Digiscreen.html">Digiscreen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tests/Klaxoon.html">Klaxoon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tests/Gamma.html">Gamma</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/List.html">Listes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/Glossaire.html">Glossaire</a></li>
 </ul>
 
     </div>
@@ -420,7 +438,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -436,6 +456,32 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#le-triangle-pedagogique">Le triangle pédagogique</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-de-la-mediatisation">Théorie de la médiatisation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outils-phares">outils phares</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#organiser">Organiser</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#kanban">KANBAN</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creer">Créer</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-sur-les-grains">Théorie sur les grains</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#outils-auteurs">Outils auteurs</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#animer">Animer</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#heberger">Héberger</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -447,6 +493,7 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="outils-numeriques-en-formation">
 <h1>Outils numériques en formation<a class="headerlink" href="#outils-numeriques-en-formation" title="Lien permanent vers cette rubrique">#</a></h1>
+<p>-<a class="reference external" href="https://www.pedagogie.ac-aix-marseille.fr/upload/docs/application/pdf/2017-06/le_numerique_au_service_des_sciences_cognitives.pdf" rel="noopener noreferrer" target="_blank">Infographie</a></p>
 <p><strong>Panorama</strong></p>
 <ul class="simple">
 <li>02/10/24 aprem</li>
@@ -457,6 +504,111 @@ document.write(`
 <li>Lister des outils numériques au service de la formation en fonction de leurs usages</li>
 <li>Expliquer les avantages et les inconvénients d’un outil numérique pour un usage donné</li>
 </ul>
+</div>
+<ul class="simple">
+<li>Fonction / Usage</li>
+<li>Détournement</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">définition outil</p>
+</div>
+<div class="section" id="le-triangle-pedagogique">
+<h2>Le triangle pédagogique<a class="headerlink" href="#le-triangle-pedagogique" title="Lien permanent vers cette rubrique">#</a></h2>
+<p>J. Houssaye</p>
+<div class="section" id="theorie-de-la-mediatisation">
+<h3>Théorie de la médiatisation<a class="headerlink" href="#theorie-de-la-mediatisation" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Média moyen: l’outil utilisé comme vecteur d’apprentissage</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Exercice avec Mural</p>
+<ul class="last simple">
+<li><a class="reference external" href="https://app.mural.co/t/lebahutbyia8988/m/lebahutbyia8988/1727005927412/df014684032dbf7fc86ecb4f914d6d3052384bc5?fromVisitorModal=true&amp;sender=u713b3064153460fd3d0e7496" rel="noopener noreferrer" target="_blank">Lien vers le mural</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="outils-phares">
+<h3>outils phares<a class="headerlink" href="#outils-phares" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>genialy</li>
+<li>storyline</li>
+<li>wooclap</li>
+<li>canva</li>
+<li>Moodle</li>
+<li>Vyond</li>
+<li>…</li>
+</ul>
+<div class="section" id="organiser">
+<h4>Organiser<a class="headerlink" href="#organiser" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="section" id="lists">
+<h5>Lists<a class="headerlink" href="#lists" title="Lien permanent vers cette rubrique">#</a></h5>
+<ul class="simple">
+<li>Notion</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Checker les bibliothèques de template</p>
+</div>
+</div>
+<div class="section" id="kanban">
+<h5>KANBAN<a class="headerlink" href="#kanban" title="Lien permanent vers cette rubrique">#</a></h5>
+<ul class="simple">
+<li>Trello</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Peut être utiliser pour maper les cours label école</p>
+</div>
+</div>
+</div>
+<div class="section" id="creer">
+<h4>Créer<a class="headerlink" href="#creer" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="section" id="theorie-sur-les-grains">
+<h5>Théorie sur les grains<a class="headerlink" href="#theorie-sur-les-grains" title="Lien permanent vers cette rubrique">#</a></h5>
+<p>Grain est activité pédagogique rattaché a l’objectif pédagogique (permet de structurer le contenue)</p>
+<ul class="simple">
+<li>Parcours (formations)</li>
+<li>Modules (chapitre)</li>
+<li>Grains (activités)</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Checker ses classifications avec les différents cours présentés à label école</p>
+</div>
+<ul class="simple">
+<li>Grain Simple: Fonctionne en autonomie, répond à 1 objectif pédagogique (exemple: infographie, vidéo, quizz)<ul>
+<li>Wooklap, vyond, canvas, kahoot</li>
+</ul>
+</li>
+<li>Grain Complexe: plusieurs grains simples associés qui répondent a un ou plusieurs objectifs pédas. Activités avec scénario à embranchement (escape game par example)<ul>
+<li>Génially, Storyline</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Grid 2</p>
+</div>
+<ul class="simple">
+<li>headpuzzle</li>
+</ul>
+<p>ressource froides / ressources chaudes</p>
+</div>
+<div class="section" id="outils-auteurs">
+<h5>Outils auteurs<a class="headerlink" href="#outils-auteurs" title="Lien permanent vers cette rubrique">#</a></h5>
+<p>IA pour la conception:</p>
+<ul class="simple">
+<li>freepik …</li>
+</ul>
+</div>
+</div>
+<div class="section" id="animer">
+<h4>Animer<a class="headerlink" href="#animer" title="Lien permanent vers cette rubrique">#</a></h4>
+</div>
+<div class="section" id="heberger">
+<h4>Héberger<a class="headerlink" href="#heberger" title="Lien permanent vers cette rubrique">#</a></h4>
+</div>
+</div>
 </div>
 </div>
 
@@ -501,11 +653,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="UX.html"
+       href="Design/Design-main.html"
        title="page suivante">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">suivant</p>
-        <p class="prev-next-title">UX</p>
+        <p class="prev-next-title">Design</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -518,6 +670,38 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#le-triangle-pedagogique">Le triangle pédagogique</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-de-la-mediatisation">Théorie de la médiatisation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outils-phares">outils phares</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#organiser">Organiser</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#kanban">KANBAN</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creer">Créer</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-sur-les-grains">Théorie sur les grains</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#outils-auteurs">Outils auteurs</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#animer">Animer</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#heberger">Héberger</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -9,6 +9,10 @@
 - Définir l'UX design et les méthodes utiles pour un DLMx
 - Identifier les objectifs, les peurs, les attentes ou encore les freins du public cible
 
-
 ```
+
+## UX Design et psychologie
+
+### Qu'est-ce que l'UX Design
+
 
