@@ -9,6 +9,8 @@ Inclure contenue label emmaus: []()
 
 ```
 
+<iframe src='../../_static/assets/pdf/Label-cours/LabelEcole-InitiationUI-Promo-Nov-23.pdf' width='100%' height='540px' frameborder='0'></iframe>
+
 ## Scéance 1
 
 - 03/10/24 aprem
@@ -144,16 +146,70 @@ Pexels, bibliothèque d'images libre de droits
 - [Petit truc marrant](https://cantunsee.space/)
 
 
+
+## Outils
+
+### Figma
+
+- Figma (version gratuite)
+
+```{note}
+
+Meilleur outil du marché pour le prototypage
+- maquette non fonctionnel
+
+```
+
+### Canvas
+
+```{note}
+
+- moins complet en terme de potentialité graphique
+
+```
+
+
+
+### Autres 
+
+
+
+```{note}
+
+Outil pour trouver des police: 
+
+- imege [whatthefont](https://www.myfonts.com/fr/pages/whatthefont)
+- web [fontninja](https://fonts.ninja/)
+
+```
+
+
 ## Exercice
 
 
 ### La copie
 
+- Recopier le modèle suivant en essayant d'être le plus proche possible
+
 - [Modèle](https://www.behance.net/gallery/97167777/Mailchimp-email-template-newsletter-design-in-html)
+
+```{image} Exos/VD-travail-TP-V2.svg
+:width: 100%
+
+```
+
+
+## Le Moodboard
 
 ```{note}
 
-Insérer svg
-
+Définir
 
 ```
+
+### Outil
+
+- pinterest (rentrer webdesign dans la recherche + le sujet)
+
+
+

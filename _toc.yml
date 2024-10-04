@@ -22,6 +22,11 @@ parts:
       sections:
       - file: Seance/Design/UX
       - file: Seance/Design/UI
+      - file: Seance/Design/Exos/Exo-main
+        sections:
+        - file: Seance/Design/Exos/Ortographe/Ortographe-main
+          sections:
+          - file: Seance/Design/Exos/Ortographe/Acceuil-activité
     - file: Seance/Ressources-chaudes
     - file: Seance/Storyline
   - caption: Mises en Situations

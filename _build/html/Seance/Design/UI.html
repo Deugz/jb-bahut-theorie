@@ -35,7 +35,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/style-phone-button.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/.ipynb_checkpoints/custom_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/.ipynb_checkpoints/style-phone-button-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -104,7 +106,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/Bahut-logo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Recherche" href="../../search.html" />
-    <link rel="next" title="Concevoir des « ressources chaudes »" href="../Ressources-chaudes.html" />
+    <link rel="next" title="Exercices" href="Exos/Exo-main.html" />
     <link rel="prev" title="UX" href="UX.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fr"/>
@@ -269,6 +271,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="Design-main.html">Design</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="UX.html">UX</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">UI</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="Exos/Exo-main.html">Exercices</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="Exos/Ortographe/Ortographe-main.html">Introduction à l’ortographe</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="Exos/Ortographe/Acceuil-activit%C3%A9.html">Les Missions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Ressources-chaudes.html">Concevoir des « ressources chaudes »</a></li>
@@ -287,7 +296,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Projet</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../Projet/Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Projet/Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Projet/Creation-module-e-learning/1-Lancement.html">Lancement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Projet/Creation-module-e-learning/2-Preparation.html">Préparation Interview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Projet/Creation-module-e-learning/3-Interview.html">Interview</a></li>
@@ -480,8 +489,18 @@ document.write(`
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outils">Outils</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#figma">Figma</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#canvas">Canvas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autres">Autres</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercice">Exercice</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-copie">La copie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#le-moodboard">Le Moodboard</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outil">Outil</a></li>
 </ul>
 </li>
 </ul>
@@ -502,6 +521,7 @@ document.write(`
 <p class="first admonition-title">Note</p>
 <p class="last">Inclure contenue label emmaus: <span class="xref myst"></span></p>
 </div>
+<iframe src='../../_static/assets/pdf/Label-cours/LabelEcole-InitiationUI-Promo-Nov-23.pdf' width='100%' height='540px' frameborder='0'></iframe>
 <div class="section" id="sceance-1">
 <h2>Scéance 1<a class="headerlink" href="#sceance-1" title="Lien permanent vers cette rubrique">#</a></h2>
 <ul class="simple">
@@ -611,17 +631,64 @@ document.write(`
 </div>
 </div>
 </div>
+<div class="section" id="outils">
+<h2>Outils<a class="headerlink" href="#outils" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="section" id="figma">
+<h3>Figma<a class="headerlink" href="#figma" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>Figma (version gratuite)</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Meilleur outil du marché pour le prototypage</p>
+<ul class="last simple">
+<li>maquette non fonctionnel</li>
+</ul>
+</div>
+</div>
+<div class="section" id="canvas">
+<h3>Canvas<a class="headerlink" href="#canvas" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>moins complet en terme de potentialité graphique</li>
+</ul>
+</div>
+</div>
+<div class="section" id="autres">
+<h3>Autres<a class="headerlink" href="#autres" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Outil pour trouver des police:</p>
+<ul class="last simple">
+<li>imege <a class="reference external" href="https://www.myfonts.com/fr/pages/whatthefont" rel="noopener noreferrer" target="_blank">whatthefont</a></li>
+<li>web <a class="reference external" href="https://fonts.ninja/" rel="noopener noreferrer" target="_blank">fontninja</a></li>
+</ul>
+</div>
+</div>
+</div>
 <div class="section" id="exercice">
 <h2>Exercice<a class="headerlink" href="#exercice" title="Lien permanent vers cette rubrique">#</a></h2>
 <div class="section" id="la-copie">
 <h3>La copie<a class="headerlink" href="#la-copie" title="Lien permanent vers cette rubrique">#</a></h3>
 <ul class="simple">
+<li>Recopier le modèle suivant en essayant d’être le plus proche possible</li>
 <li><a class="reference external" href="https://www.behance.net/gallery/97167777/Mailchimp-email-template-newsletter-design-in-html" rel="noopener noreferrer" target="_blank">Modèle</a></li>
 </ul>
+<a class="reference internal image-reference" href="../../_images/VD-travail-TP-V2.svg"><img alt="../../_images/VD-travail-TP-V2.svg" src="../../_images/VD-travail-TP-V2.svg" width="100%" /></a>
+</div>
+</div>
+<div class="section" id="le-moodboard">
+<h2>Le Moodboard<a class="headerlink" href="#le-moodboard" title="Lien permanent vers cette rubrique">#</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Insérer svg</p>
+<p class="last">Définir</p>
 </div>
+<div class="section" id="outil">
+<h3>Outil<a class="headerlink" href="#outil" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>pinterest (rentrer webdesign dans la recherche + le sujet)</li>
+</ul>
 </div>
 </div>
 </div>
@@ -667,11 +734,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="../Ressources-chaudes.html"
+       href="Exos/Exo-main.html"
        title="page suivante">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">suivant</p>
-        <p class="prev-next-title">Concevoir des «&nbsp;ressources chaudes&nbsp;»</p>
+        <p class="prev-next-title">Exercices</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -712,8 +779,18 @@ document.write(`
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outils">Outils</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#figma">Figma</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#canvas">Canvas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autres">Autres</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercice">Exercice</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-copie">La copie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#le-moodboard">Le Moodboard</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outil">Outil</a></li>
 </ul>
 </li>
 </ul>
