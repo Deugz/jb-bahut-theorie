@@ -16,7 +16,20 @@
 
 <br>
 
-## Opinion sur l'exercice
+
+## Avant de Commencer
+
+<br>
+<br>
+
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Genially sans titre" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/6717db0d4aaf9d510577c06c" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+
+
+<br>
+<br>
+
+
+### Opinion sur l'exercice
 
 Je suis très enthousiaste a l'idée de réaliser mon premier module e-learning, d'autant plus que c'est pour une association, ce qui **donne du sens** a l'exercice. En revanche, je vois plusieurs difficultés apparaitre assé rapidement. En effet, lorsque je navigue dans les documents fournis par l'association (de manière anticipé, ce qu'on me fait allègrement remarquer) je trouve leur métaphore de l'arbre pour présenter les modules de formations interne très interessante (cette métaphore m'est déja apparue pour présenter mes propres formations), et très rapidement une idée de présentation interactive (avec Génially) se dessine dans mon esprit. Manque de chance je ne suis pas censé réaliser ce module. Frustration rapide et puis finalement je me dis que rien ne m'empêche de le faire pour m'amuser. Vient ensuite l'interview avec le commanditaire, François, un mec très cool, ce qui me donne encore plus envie de mettre tout en oeuvre pour l'aider dans sa démarche d'acceuillir ses bénévoles dans les meilleurs conditions. Il nous confie qu'il aimerait bien que le module soit réalisé sur une plateforme qui ne nécéssite pas de connection (ce que je comprend tout à fait, moi même étant assé hésitant à m'inscrire sur une plateforme dans une phase aussi préliminaire). Je comprend assé vite qu'une introduction du module au sein d'un LMS ne répondrai pas (ou que partiellement) au cahier des charges. En revanche, l'introduction au sein d'un LMS fait partie de la consigne. Je me retrouve donc face a un dilemne:
 
@@ -47,7 +60,8 @@ Faire quelque chose qui répond à la consigne mais de manière moindre au cahie
 <p class="p-emphase"><strong>Je vais faire les deux!</strong></p>
 
 
-:::{dropdown} Mon plan pour m'en sortir!
+:::{admonition} Mon plan de départ (pour m'en sortir) !
+:class: dropdown
 
 Je vais réliser tout le travail d'analyse, de préparation, design, développement dans mon LMS. Il me servira succesivement de: 
 - brouillon pédagogique
@@ -57,9 +71,69 @@ Je vais réliser tout le travail d'analyse, de préparation, design, développem
 
 Dans un deuxième temps je réaliserai une étape d'intégration dans les différents LMS
 
+:::
+
+:::{admonition} Ce qui a merdé ...
+:class: dropdown, note
+
+Je vais réliser tout le travail d'analyse, de préparation, design, développement dans mon LMS. Il me servira succesivement de: 
+- brouillon pédagogique
+- implémentation graphique 
+- édition du storyboard
+- plateforme d'integration et de test des outils externes
+
+Dans un deuxième temps je réaliserai une étape d'intégration dans les différents LMS
+
+:::
+
+***
+
+<p class="p-emphase2"><strong>Pourquoi rendre un projet pas finit ?</strong></p>
+
+<br>
+<br>
+
+::::{grid} 2
+
+:::{grid-item-card}
+:columns: 6
+
+**C'est trop top**
+
+^^^
+
+5 semaines, c'est long! d'autant plus que les efforts ont été intense et variés! Avant de me lancer dans un exercice de la sorte, j'ai besoin d'une étape de **sédimentation de mes connaissances**, que je n'ai pas encore réalisé (en plus, je le confesse, d'avoir besoin de repos - ce que j'ai accompli par contre cette semaine).
 
 
 :::
+
+:::{grid-item-card}
+:columns: 6
+
+
+
+**Ca demande plus de temps**
+^^^
+
+Et pour plusieurs raisons! Vous le verez lors de votre lecture, j'ai éssayez de créer quelques génially pour m'aider a communiquer 
+
+
+:::
+
+::::
+
+
+### Plan 
+
+
+```{note}
+
+Insérer genially gant chart
+
+
+
+```
+
 
 ## Résultats
 
