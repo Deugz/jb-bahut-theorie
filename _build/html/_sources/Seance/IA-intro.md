@@ -14,6 +14,13 @@
 
 - Seminaire a distance par Sylvain Tillon
 
+
+## Ressources
+
+- [theresanaiforthat](https://free.theresanaiforthat.com/ai/storytell-ai/)
+
+
+
 ## Quizz
 
 L'IA ne travail pas de manière autonome (IA forte - n'existe pas encore)

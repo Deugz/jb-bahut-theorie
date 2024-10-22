@@ -44,6 +44,20 @@ Version: 0.1
 ::::
 
 
+```{note}
+
+Insérer guide des prix du digital learning de l'istf (livre blanc asset)
+
+- classification e2c
+
+```
+
+- plateforme freelance: Malt
+
+podcast: rdv en terres digitales
+    - auphonic: outil ia de cration de podcasts
+
+
 ## Définition
 
 <br>
@@ -244,15 +258,19 @@ Missions-DLM
 #### Mon Objectif
 
 
-```{figure} Docs/Diagramme-terrain-1.png
----
-width: 100%
-name: DLM-diagramme-fonctions
----
-Les différentes raison d'être du DLM. courbe verte: réalisé le 03/10 avec en tête *ce que j'aimerai bien faire
-```
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Objectifs-DLM" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/670d037413af11ca9c545add" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
 
 <br>
+<br>
+
+
+***
+
+##### Définition
+
+<br>
+<br>
+
 
 ::::{grid} 2 
 
@@ -550,7 +568,9 @@ Quand on fixe des objectifs de formation, ils doivent être
 - modestes
 - mesurables
 
+## Communauté DLM
 
+- [Site](https://www.elearningtouch.com/)
 
 
 

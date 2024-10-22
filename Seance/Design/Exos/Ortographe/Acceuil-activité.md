@@ -400,3 +400,10 @@ Visiblement Sandra n'était pas la seule à avoir des problèmes d'ortographe! A
 ## Liste des Missions
 
 
+```{note}
+
+Créer des cartes avec les différents items abordés
+
+```
+
+

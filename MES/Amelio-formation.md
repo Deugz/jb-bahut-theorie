@@ -8,3 +8,11 @@
 - Formuler des recommandations en cohérence avec les problèmes identifiés au préalable
 
 ```
+
+
+## Proposer des évolutions/améliorations de votre e-learning
+
+
+
+
+### Prioriser 

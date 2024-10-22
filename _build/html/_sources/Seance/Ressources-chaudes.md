@@ -8,3 +8,26 @@
 - Lister les bonnes pratiques pour mener une interview avec un expert
 
 ```
+
+```{note}
+
+Récupérer les diapos
+
+```
+
+## Finalité d'une activité
+
+
+### Positionnement
+
+
+
+### Apprentissage
+
+
+
+### Entrainement
+
+
+
+### Evaluation

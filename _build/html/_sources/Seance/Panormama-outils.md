@@ -1,5 +1,23 @@
 #  Outils numériques en formation
 
+
+```{note}
+
+checker adress mail bahut (utile pour connecter aux outils) outlook
+
+```
+
+#### LCMS
+
+- [Didask](https://votre-espace.didask.com/)
+
+
+
+
+
+
+
+
 -[Infographie](https://www.pedagogie.ac-aix-marseille.fr/upload/docs/application/pdf/2017-06/le_numerique_au_service_des_sciences_cognitives.pdf)
 
 

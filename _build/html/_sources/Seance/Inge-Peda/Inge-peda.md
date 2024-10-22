@@ -1,19 +1,49 @@
-# Ingénierie pédagogique
+# Ingénierie pédagogique (ADDIE)
 
-## Scéance 1
 
-- 24/09/24 aprem
+***
+
+<br>
+
+::::{grid} 2
+
+:::{grid-item}
+:columns: 3
+
+<br>
+
+<div id="div-colour">
+
+🕐: 24/09/24 pm
+<br>
+✍️: en cours
+<br>
+🚧: 05/10      
+Version: 0.1
+<br>
+**Révisions**: ❌ 
+
+</div>    
+    
+:::
+
+:::{grid-item}
+:columns: 9
+
 
 ```{admonition} Objectif(s) pédagogique(s)
 
 - Identifier les besoins de formation
 - S'approprier ...
 
-
 ```
 
+:::
 
-### Piloter un projet de formation
+::::
+
+
+## Piloter un projet de formation
 
 ```{admonition} Exercice
 
@@ -26,7 +56,103 @@
 
 ```
 
-### Le modèle ADDIE
+::::{grid} 3
+
+:::{grid-item-card}
+
+**La formation**
+^^^
+
+La formation proprement dite, c’est-à-dire que les participants seront capables de faire quelque chose à l’issue de la formation, quelque chose de nouveau, une opération complexe. La formation est un développement de certaines facultés.
+
+:::
+
+:::{grid-item-card}
+
+**L'information**
+^^^
+
+
+L’information quand on parle à quelqu’un pour lui dire des choses qu’il ne connaît pas, on
+ne le forme pas, on l’informe. On veut juste que
+les participants en sachent plus après la session
+qu’avant.
+
+:::
+
+:::{grid-item-card}
+
+**La sensibilisation**
+^^^
+
+La sensibilisation différente de l’information
+en ce qu’on cherche à faire en sorte que les
+cibles découvrent un pb et le comprennent,
+prennent conscience d’un risque.
+
+:::
+
+::::
+
+
+### Le Besoin
+
+Il est un écart entre compétences constatées et compétences attendues : il est donc en quelque sorte un problème ; Il résulte d’un dysfonctionnement ou d’une évolution ; Il peut être identifié à différents moments et par différents acteurs (les futurs formés eux-mêmes, la hiérarchie, un expert par exemple) ; Il doit être communiqué aux formés, aussi bien que les objectifs (trop souvent, les gens ne savent pas ce qu’ils font là...).
+
+
+
+### Ingénieurie de Formation vs Ingénieurie pédagogique
+
+::::{grid} 2
+
+:::{grid-item-card}
+:columns: 6
+
+**Ingénieur de formation**
+
+^^^
+
+L'ingénierie de la formation s'articule autour de 4 étapes clés:
+- **L'analyse des besoins**: L'idée est de comprendre les objectifs et les besoins des apprenants et du commanditaire.
+- **Le choix des dispositifs de formation**: A ce stade, le travail de l'ingénieur va être de créer un projet de formation selon les besoins déterminés lors de la première étape, et les outils pédagogiques nécessaires.
+- **L'animation et le pilotage**: Le rôle de l'ingénieur de formation n'est pas de piloter ou d'animer les modules de formation. En revanche, il doit s'assurer que la formation se déroule comme prévu. Son travail sera alors celui de "chef d'orchestre".
+- **L'évaluation et l'itération**: Enfin, l'ingénieur devra évaluer le plan de formation global pour vérifier son bon déroulement et l'atteinte ou non des objectifs. Il devra alors, dans une démarche itérative, donner des suggestions d'amélioration pour les prochains projets de formation
+
+:::
+
+:::{grid-item-card}
+:columns: 6
+
+**Ingénieur pédagogique**
+
+^^^
+
+L'ingénierie de la formation consiste à déterminer le projet de la formation, alors que **l'ingénierie pédagogique concerne uniquement le contenue**
+
+L'ingénieur de formation rédige la recette, alors que l'ingénieur pédagogique prend le rôle de chef patissier
+
+L'ingénierie pédagogique a pour objectif de **déterminer les ressources** internes et externes nécessaires à la création de la formation. Elle s'arrête d'avantage sur l'aspect "pédagogique" du contenue.
+
+Au niveau opérationnel, l'ingénieur pédagogique prodigue des conseils quand aux sujets à aborder et à la façon dont il faut les amener auprès des apprenants. Pour lui apporter une réponse pertinente, l'ingénieur pédagogique devra consulter l'ingénieur de formation qui lui fera part de ses analyses et de ses études pour ce projet de formation, s'il n'est pas la même personne !
+
+:::
+
+::::
+
+
+### La Diapo efficace
+
+
+```{figure} Docs/Diapo-efficace.png
+---
+width: 100%
+name: Diapo-efficace
+---
+La diapo efficace
+```
+
+
+## Le modèle ADDIE
 
 ```{figure} Docs/ADDIE-Capture.png
 ---
@@ -43,6 +169,17 @@ Utiliser le site suivant: [Lien](https://yaplusk.fr/ingenierie-pedagogique-forma
 ::::::{tab-set}
 
 :::::{tab-item} Analyse
+
+>Cette phase nous permet de collecter toutes les informations nécessaires à la mise en place de notre parcours de formation : contexte, besoins, enjeux, situation désirée, contraintes logistiques, budgétaires, temporelles, etc. À l’issue de cette étape, nous avons à notre disposition un **cahier des charges** qui reprend l’ensemble des éléments clés liés à la formation que nous allons dispenser.
+
+**Méthode des 7P:
+- Purpose (enjeux, objectifs)
+- People (public concerné)
+- Product (compétences à acquérir)
+- Preparation (prérequis, ce qui peut être fait en amont)
+- Practical Concerns (éléments logistiques)
+- Pitfalls (risques)
+- Process (synopsis pédagogique, nous verrons cela dans la partie Design)
 
 
 :::::
@@ -71,17 +208,6 @@ Utiliser le site suivant: [Lien](https://yaplusk.fr/ingenierie-pedagogique-forma
 ::::::
 
 :::::::
-
-
-
-
-```{figure} Docs/ADDIE-Sydo-Capture.png
----
-width: 100%
-name: ADDIE-Sydo-method
----
-Le modèle ADDIE tel qu'imaginé par Sydo (lien)
-```
 
 
 
@@ -143,12 +269,15 @@ Différence entre ingénieurie de formation et ingénieurie pédagogique
 - Ingénieurie de formation (comprend plusieurs modules pédagogiques)
 
 
-### Le modèle Sydo
+### La version Sydo
 
-```{note}
 
-Onsérer diapo
-
+```{figure} Docs/ADDIE-Sydo-Capture.png
+---
+width: 100%
+name: ADDIE-Sydo-method
+---
+Le modèle ADDIE tel qu'imaginé par Sydo (lien)
 ```
 
 
@@ -165,6 +294,13 @@ Onsérer diapo
 fossé entre la ou on est et la ou ils ont besoin d'être.
 
 - Dysfonctionnement ou évolution
+
+
+## Exercice:
+
+- Kahoot: [Lien](https://create.kahoot.it/share/le-bahut-inge-peda/8821c1ad-dead-49f6-9cbd-1e3c39f4c4a5)
+
+
 
 ## Scéance 2
 

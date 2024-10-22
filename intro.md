@@ -1,7 +1,18 @@
-# Digital Learning Management 
+
+<br>
+<br>
+
+```{image} _static/Title/digital-learning-management.svg
+:width: 100%
+
+
+```
+
+<br>
 
 ***
 
+<br>
 <br>
 
 ::::{grid} 2
@@ -65,19 +76,12 @@
 
 <br>
 
-```{admonition} A faire
-:class: warning
 
-- s'enregistrer sur les différents outils [liens]()
-- rattraper les **Enquetes de satisfaction**
-- Recopier les cours
-    - créer un trello pour garder le compte 
+<h2> Formation </h2>
 
 
-```
+<h3>Liens Importants</h3>
 
-
-## Liens Importants
 
 <br>
 
@@ -133,36 +137,26 @@ Programme (Airtable)
 ::::
 
 
+<br>
+
+:::::{dropdown} Autres ressources
+
 - [Accompagnement recherche structure d’accueil et entretiens](https://sunset-whale-fef.notion.site/Le-Bahut-by-iA-Accompagnement-recherche-structure-d-accueil-et-entretiens-807d3f02919a4e70bf8f435a46322d0b)
 
 - [Le Bahut by iA - Logistique](https://sunset-whale-fef.notion.site/Le-Bahut-by-iA-Logistique-fd24fb60aa0f467f80779df120401cfb)
 
 - [Le Notion de la promo](https://ultra-mum-4ca.notion.site/Le-Bahut-by-iA-Espace-Alternance-promo-1-957e070b4dc8419eb6b66940ac7896ce)
 
-### Outils
 
-#### LCMS
+:::::
 
-- [Didask](https://votre-espace.didask.com/)
+<br>
+<br>
 
-### Le Programme
+<h2> Quésako </h2>
 
-- [Airtable](https://airtable.com/appaANgzWegnTbECA/shrJkCdDr674IRURp/tblnuVYf1vvyhQl9G)
+<br>
+<br>
 
-
-
-```{admonition}  aides
-
-aides dans le cadre d’une mobilité professionnelle nécessitant des déplacements et un deuxième logement.
-
-```
-
-
-```{note}
-
-checker adress mail bahut (utile pour connecter aux outils) outlook
-
-```
-
-
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 116.67%; padding-top: 0; height: 0;"><iframe title="Introduction site Bahut" frameborder="0" width="1200" height="1300" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/670cf0893fdadb1a48abc7d6" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
 

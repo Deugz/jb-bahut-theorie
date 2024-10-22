@@ -6,6 +6,25 @@ Extraire les documents du discord
 
 ```
 
+```{admonition} A faire
+:class: warning
+
+- s'enregistrer sur les différents outils [liens]()
+- rattraper les **Enquetes de satisfaction**
+- Recopier les cours
+    - créer un trello pour garder le compte 
+
+
+```
+
+## Aides
+
+```{admonition}  financières
+
+aides dans le cadre d’une mobilité professionnelle nécessitant des déplacements et un deuxième logement.
+
+```
+
 
 - Créer airtable depuis excel: programme marseille [lien](https://docs.google.com/spreadsheets/d/1JeTSwUaqVX8dfh_8ebiFpvHIX15YmjE5tQih1u9Pzgs/edit?gid=825431636#gid=825431636)
 
@@ -72,6 +91,39 @@ Mis en place par l'université de UCL
 ### Outils
 
 - [Kahoot]()
+
+- [iorad](): est un moyen de créer rapidement et facilement des tutoriels interactifs étape par étape. Enregistrez votre écran pendant que vous cliquez, naviguez, écrivez, etc. et l'outil détecte et découpe automatiquement chaque étape de la navigation.
+
+- [Prezi](): est une très bonne alternative à Powerpoint pour la création de présentations dynamiques. Des modèles prêts à l'emploi permettent aux utilisateurs de se familiariser avec l'outil et de créer très rapidement des présentations de qualité. 
+
+
+```{note}
+
+Liste des outils tiers recommandé par [360 Learning](https://support.360learning.com/hc/fr/articles/360062151732-Utiliser-des-outils-externes-pour-la-cr%C3%A9ation-de-contenu)
+
+```
+
+
+<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Auteur #2 / Les objectifs pédagogiques" frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/645d0cd4331c1f0012e8e9cb" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+
+
+#### Flash cards 
+
+
+[Anki](https://apps.ankiweb.net/) - Open source
+
+```{note}
+
+**Téléchargé, a tester**
+
+L'apprentissage avec Anki repose sur deux concepts :
+
+- la révision active, consiste à essayer de se rappeler la réponse à une question posée ;
+- le système de répétitions espacées, permet à l'utilisateur de réviser plus souvent les cartes les moins connues et moins souvent les cartes déjà sues.
+
+
+```
+
 
 ### Profils Linkedin
 

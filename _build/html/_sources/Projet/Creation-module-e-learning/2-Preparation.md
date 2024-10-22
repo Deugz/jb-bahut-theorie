@@ -1,10 +1,21 @@
-# Préparation Interview
+# Organisation
 
-- 15/10/24 matin
+## Planning
 
-```{admonition} Objectif(s) pédagogique(s)
 
-- Lister des questions à poser aux experts
-- Lister les bonnes pratiques pour mener une interview avec un expert
 
-```
+
+
+
+
+
+
+
+## Mon Parcours
+
+### Mercredi
+
+Aprés avoir rempli le document nécéssaire à mon meeting avec Julien (plannifié a 14h), je me lance dans la création d'un site Sphinx, qui va me servire de base de travail tout au long du projet:
+- réflexion sur le parcours globale de la formation
+- réflexion sur le déroulé pédagogique
+- mise en place progressive de la charte graphique et création de la "maquette moche"

@@ -9,15 +9,31 @@ parts:
     - file: to-include
   - caption: Introduction
     chapters:
-    - file: Intro/Intervenants/Intervenants-Main
-    - file: Intro/ecocystem
+    - file: Intro/Le-bahut/Le-Bahut-main
+      sections:
+      - file: Intro/Le-bahut/Intervenants/Intervenants-Main
+      - file: Intro/Le-bahut/ecocystem
+    - file: Intro/Plateforme/Site
   - caption: Scéances
     chapters:
     - file: Seance/IntroDL/IntroDL
     - file: Seance/Inge-Peda/Inge-peda
+      sections:
+      - file: Seance/Inge-Peda/Analyse/Analyse
+      - file: Seance/Inge-Peda/Design/Design
+      - file: Seance/Inge-Peda/Developement/Developement
+      - file: Seance/Inge-Peda/Implementation/Implementation
+      - file: Seance/Inge-Peda/Evaluation/Evaluation
     - file: Seance/mecanisme-apprentissage
     - file: Seance/IA-intro
-    - file: Seance/Panormama-outils
+    - file: Seance/Outils/Panormama-outils
+      sections:
+      - file: Seance/Outils/Organiser/Organiser
+      - file: Seance/Outils/Creer/Creer
+      - file: Seance/Outils/Animer/Animer
+      - file: Seance/Outils/Heberger/Heberger
+        sections:
+        - file: Seance/Outils/Heberger/Moodle
     - file: Seance/Design/Design-main
       sections:
       - file: Seance/Design/UX
@@ -35,7 +51,7 @@ parts:
     - file: MES/Amelio-formation
   - caption: Entrainement
     chapters:
-    - file: Entrainement/Outils-hebergement
+    - file: Entrainement/LMS/Outils-hebergement
     - file: Entrainement/concept-prod-outils 
     - file: Entrainement/Genially
   - caption: Projet
