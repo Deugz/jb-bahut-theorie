@@ -35,8 +35,10 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/flash-card.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/style-phone-button.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/.ipynb_checkpoints/custom_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/.ipynb_checkpoints/flash-card-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/.ipynb_checkpoints/style-phone-button-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
@@ -92,6 +94,7 @@ var addUtterances = () => {
 }
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
+    <script src="_static/assets/scripts/flash-card.js"></script>
     <script src="_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js"></script>
@@ -257,17 +260,13 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="Intro/Le-bahut/Le-Bahut-main.html">Le Bahut</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Intro/Le-bahut/Intervenants/Intervenants-Main.html">Intervenants</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Intro/Le-bahut/ecocystem.html">Ecosystème</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Intro/La-Promo.html">La Promo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Intro/Plateforme/Site.html">Cette Plateforme</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Scéances</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🎓 Scéances</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Seance/IntroDL/IntroDL.html">Le Digital Learning</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Seance/Inge-Peda/Inge-peda.html">Ingénierie pédagogique (ADDIE)</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Seance/Inge-Peda/Inge-peda.html">Ingénierie pédagogique (ADDIE)</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="Seance/Inge-Peda/Analyse/Analyse.html">Analyse</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Seance/Inge-Peda/Design/Design.html">Design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Seance/Inge-Peda/Developement/Developement.html">Dévelopement</a></li>
@@ -275,69 +274,68 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="Seance/Inge-Peda/Evaluation/Evaluation.html">Evaluation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Seance/mecanisme-apprentissage.html">Les mécanismes de l’apprentissage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Seance/IA-intro.html">Introduction à l’IA</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Seance/Outils/Panormama-outils.html">Outils numériques en formation</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Seance/Outils/Organiser/Organiser.html">Organiser</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Seance/Outils/Creer/Creer.html">Créer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Seance/Outils/Animer/Animer.html">Animer</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="Seance/Outils/Heberger/Heberger.html">Héberger</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="Seance/Outils/Heberger/Moodle.html">Moodle</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Seance/Apprentissage/mecanisme-apprentissage.html">Mécanismes d’apprentissage</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Seance/Apprentissage/Motivation/Motivation.html">Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Seance/Apprentissage/Memorisation/Memorisation.html">Mémorisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Seance/Apprentissage/Attention/Attention.html">Attention</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Seance/IA/IA-intro.html">Introduction à l’IA</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Seance/Bonnes-pratiques/Bonnes-pratiques-main.html">Bonnes pratiques</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="Seance/Bonnes-pratiques/Design/Design-main.html">Design</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="Seance/Bonnes-pratiques/Design/UX.html">UX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Seance/Bonnes-pratiques/Design/UI.html">UI</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="Seance/Bonnes-pratiques/Design/Exos/Exo-main.html">Exercices</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="Seance/Bonnes-pratiques/Design/Exos/Ortographe/Ortographe-main.html">Introduction à l’ortographe</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Seance/Design/Design-main.html">Design</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Seance/Design/UX.html">UX</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Seance/Design/UI.html">UI</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="Seance/Design/Exos/Exo-main.html">Exercices</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Seance/Design/Exos/Ortographe/Ortographe-main.html">Introduction à l’ortographe</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="Seance/Design/Exos/Ortographe/Acceuil-activit%C3%A9.html">Les Missions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Seance/Bonnes-pratiques/Ressources/Ressources-chaudes.html">Concevoir des « ressources chaudes »</a></li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Seance/Ressources-chaudes.html">Concevoir des « ressources chaudes »</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Seance/Storyline.html">Introduction a Storyline</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Mises en Situations</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🛠 Outils</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="MES/Analyse-form.html">Analyse d’une formation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="MES/Amelio-formation.html">Amélioration d’une formation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Outils/Panormama-outils.html">Panorama</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Outils/Organiser/Organiser.html">Organiser</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Outils/Organiser/Tests/Supermemo.html">Supermemo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Outils/Organiser/Tests/Trello.html">Trello</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Entrainement</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Entrainement/LMS/Outils-hebergement.html">Outils d’hébergement</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Entrainement/concept-prod-outils.html">Outils de conception et de production</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Entrainement/Genially.html">Atelier Genially</a></li>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Outils/Creer/Creer.html">Créer</a></li>
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="Outils/Animer/Animer.html">Animer</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Outils/Animer/Tests/Digiscreen.html">Digiscreen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Outils/Animer/Tests/Klaxoon.html">Klaxoon</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projet</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="Projet/Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Projet/Creation-module-e-learning/1-Lancement.html">Lancement</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Projet/Creation-module-e-learning/2-Preparation.html">Organisation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Projet/Creation-module-e-learning/3-Interview.html">Interview (Définition)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Projet/Creation-module-e-learning/4-Analyse.html">Analyse</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Projet/Creation-module-e-learning/5-Conception.html">Conception</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Projet/Creation-module-e-learning/6-Redaction.html">Rédaction / Grains</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Projet/Creation-module-e-learning/7-Storyboard.html">Storyboard</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Projet/Creation-module-e-learning/8-Production.html">Production</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Projet/Creation-module-e-learning/9-Integration.html">Intégration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Projet/Creation-module-e-learning/10-Test.html">Bêta-test</a></li>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Outils/Heberger/Heberger.html">Héberger</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Outils/Heberger/Tests/Moodle.html">Moodle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Outils/Heberger/Tests/360Learning.html">360 Learning</a></li>
 </ul>
 </li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Séminaires</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">✨ Projets / Portefolio</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Webinaires/Seminaire1.html">Seminaire 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Projet/0-Analyse-formation/Analyse-form.html">Analyse / amélioration d’une formation</a></li>
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="Projet/1-Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Projet/1-Creation-module-e-learning/Organisation/Lancement.html">Lancement / Organisation</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="Projet/1-Creation-module-e-learning/Livrables/Livrables-Main.html">Livrables</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="Projet/1-Creation-module-e-learning/Livrables/Experience-Utilisateur.html">Experience Utilisateur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Projet/1-Creation-module-e-learning/Livrables/Deroule-Pedagogiques.html">Déroulé Pédagogique</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tests</span></p>
+</li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🌍 Extras</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Tests/Digiscreen.html">Digiscreen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tests/Klaxoon.html">Klaxoon</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tests/Gamma.html">Gamma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Extras/EcocystemDLM.html">Ecocystem DLM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Extras/Webinaires/Webinaires-main.html">Webinaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Extras/REX/REX-Main.html">REX</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="nav bd-sidenav">
@@ -507,33 +505,38 @@ document.write(`
 <br>
 <hr class="docutils" />
 <br>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
 <br>
+<p class="p-emphase">👋 <strong>Bienvenue</strong></p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<a class="reference internal image-reference" href="_images/pteLu.png"><img alt="_images/pteLu.png" class="align-center" src="_images/pteLu.png" style="width: 90%;" /></a>
+</div>
+</div>
+</div>
+<br>
+<p class="p-emphase2"><em>"Sur <strong> Le Journal d'Apprentissage Collaboratif </strong> des <strong>DigiLU </strong> </em>"</p>
+<br>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Le petit mot de l’administrateur<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-column sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
-<p class="p-emphase">👋 <strong>Bienvenue</strong></p>
-<p class="p-emphase2">Sur mon journal d'apprentissage digitale </p>
-</div>
-<div class="sd-col sd-d-flex-column sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
-<a class="reference internal image-reference" href="_images/profile-pic-round.png"><img alt="_images/profile-pic-round.png" class="align-center" src="_images/profile-pic-round.png" style="width: 65%;" /></a>
-</div>
-</div>
-</div>
 <br>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
-<div class="sd-col sd-d-flex-column sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
-<blockquote>
-<div><p><strong>Objectifs</strong></p>
-<ul class="simple">
-<li>Prendre des notes relatives aux cours</li>
-<li>Appliquer les méthodes de Design thinking</li>
-<li>Utiliser cette ressource comme outil de travail</li>
-</ul>
-</div></blockquote>
+<p class="sd-card-text">Texte d’intro</p>
 </div>
-<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<br>
+<a class="reference internal image-reference" href="_images/profile-pic-round.png"><img alt="_images/profile-pic-round.png" class="align-center" src="_images/profile-pic-round.png" style="width: 80%;" /></a>
+<br>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
 <div class="sd-card-header bg-light docutils">
 <p class="sd-card-text"><strong>Label école</strong></p>
 </div>
@@ -544,14 +547,86 @@ document.write(`
 </div>
 </div>
 </div>
-<br>
-<h2> Formation </h2>
-<h3>Liens Importants</h3>
+</div>
+</details><br>
+<h2>💡 <strong>Objectifs de la plateforme</strong></h2>
 <br>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<div class="flashcard" id="card1">
+        <div class="flashcard-inner">
+            <div class="flashcard-front">
+<h4>Pour Moi</h4>                 
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+<p><dotlottie-player src="https://lottie.host/b6902bec-5ed3-4063-9194-b7d97c42c0c9/a64de3nrVC.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></dotlottie-player></p>
+</div>
+<div class="flashcard-back">
+<p>
+<li> Prendre des notes pendant les cours</li>
+<li> Récupérer et stocker les supports</li>
+<li> Mise en  relation des notes / documents</li>
+<li> Plateforme de révision</li>
+<li> Construction de connaissances</li>
+<li> Experimentation métacognitive</li>
+<li> Design thinking</li>
+<li> Support de veille</li>
+</p>
+</div>
+</div>
+</div>
+<p><button class="button-flash-card" onclick="flipCard('card1')">Retourner </button></p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<div class="flashcard" id="card2">
+<div class="flashcard-inner">
+<div class="flashcard-front">
+<h4>Pour Nous</h4>
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+<p><dotlottie-player src="https://lottie.host/8efbf8d4-c683-40bb-b018-844a85a12047/zuKIagG6Zc.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></dotlottie-player></p>
+</div>
+<div class="flashcard-back">
+<p>
+<li> Outil de travail collaboratif</li>    
+<li> Co-construction de connaissances</li>
+<li> Implémentation itérative et libre</li>
+<li> Mise en récit collective et progressive</li>
+<li> Plateforme de partage et d'échange</li>
+<li></li>
+</p>
+</div>
+</div>
+</div>    
+<p><button class="button-flash-card" onclick="flipCard('card2')">Retourner</button></p>
+</div>
+</div>
+</div>
+<!-- partial -->
+<script  src="../_static/assets/scripts/flash-card.js"></script>
+<h3>Partis pris</h3>
+<div class="dropdown tip admonition">
+<p class="first admonition-title">Experimenter la production d’un Journal d’Apprentissage Collaboratif</p>
+<p class="last">On parle beaucoup de LMS, un outil pour que les ingénieurs de formations mettent à disposition leurs enseignements aux étudiants. Mais qu’en est-il de ce qui se passe du coté de l’étudiant? Existe t’il des ressources, des méthodes pour que ces derniers puissent assimiler le contenue de manière efficace ? Je ne pense pas, et nous le ressentons tous ! Chacun essaie de trouver sa voie, sa méthode individuelle de digestion des connaissances prodigués en cours. Dans mon cas, ça passe par la création d’un journal d’apprentissage, une méthiode que j’ai développé pendant mes années de recherche. J’aimerai aujourd’hui tester le coté collaboratif de cette méthode et c’est pourquoi j’ai mis en place cette plateforme.</p>
+</div>
+<div class="dropdown note admonition">
+<p class="first admonition-title">Utiliser seulement des technologies open-source ou gratuites</p>
+<p class="last">J’uilise deux outils principaux, Jupyter-Book et Github, deux technologies open-sources.</p>
+</div>
+<div class="dropdown note admonition">
+<p class="first admonition-title">Impliquer toute la promo dans la création d’une ressource commune</p>
+<p class="last">Je trouverai géniale qu’on créé une ressource commune. Ainsi, chaque membres de la promo pourrai s’épanouir et mettre à profit ses compétences spécifiques au service du groupe.</p>
+</div>
+<div class="dropdown note admonition">
+<p class="first admonition-title">Utiliser collectivement une approche de design thinking</p>
+<p class="last">Expliquer</p>
+</div>
+<br>
+<h2> 🧠 <strong> Notre Intelligence Collective </strong></h2>
+<h3>Platformes d'hébergement</h3>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
 <div class="sd-card-header bg-light docutils">
 <p class="sd-card-text">Notion Apprenant</p>
 </div>
@@ -559,9 +634,7 @@ document.write(`
 <a class="reference internal image-reference" href="_images/notion-svgrepo-com.svg"><img alt="_images/notion-svgrepo-com.svg" class="align-center" src="_images/notion-svgrepo-com.svg" width="60%" /></a>
 </div>
 <a class="sd-stretched-link reference external" href="https://ultra-mum-4ca.notion.site/Le-Bahut-by-iA-Espace-Alternance-promo-1-957e070b4dc8419eb6b66940ac7896ce" rel="noopener noreferrer" target="_blank"></a></div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
 <div class="sd-card-header bg-light docutils">
 <p class="sd-card-text">Google Drive</p>
 </div>
@@ -570,8 +643,17 @@ document.write(`
 </div>
 <a class="sd-stretched-link reference external" href="https://drive.google.com/drive/folders/1cvO75sRuSKQR_Zgqtog3-3dkAw6567_Z" rel="noopener noreferrer" target="_blank"></a></div>
 </div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-col sd-d-flex-column sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<blockquote>
+<div>Paragraphe d’explication de ce que le site peut apporter dans ce domaine</div></blockquote>
+</div>
+</div>
+</div>
+<h3>Outils de communications</h3>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
 <div class="sd-card-header bg-light docutils">
 <p class="sd-card-text">Programme (Airtable)</p>
 </div>
@@ -579,10 +661,24 @@ document.write(`
 <a class="reference internal image-reference" href="_images/airtable-svgrepo-com.svg"><img alt="_images/airtable-svgrepo-com.svg" class="align-center" src="_images/airtable-svgrepo-com.svg" width="60%" /></a>
 </div>
 <a class="sd-stretched-link reference external" href="https://airtable.com/appaANgzWegnTbECA/shrJkCdDr674IRURp/tblnuVYf1vvyhQl9G" rel="noopener noreferrer" target="_blank"></a></div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light docutils">
+<p class="sd-card-text">Discord</p>
+</div>
+<div class="sd-card-body docutils">
+<a class="reference internal image-reference" href="_images/discord-communication-interaction-message-network-svgrepo-com.svg"><img alt="_images/discord-communication-interaction-message-network-svgrepo-com.svg" class="align-center" src="_images/discord-communication-interaction-message-network-svgrepo-com.svg" width="60%" /></a>
+</div>
+<a class="sd-stretched-link reference external" href="https://drive.google.com/drive/folders/1cvO75sRuSKQR_Zgqtog3-3dkAw6567_Z" rel="noopener noreferrer" target="_blank"></a></div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Et pourquoi pas quelque chose en plus ?</p>
+<p class="last">Discuter ici de l’opportunité de créer notre propre outil de communication</p>
 </div>
 </div>
 </div>
-<br>
+</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Autres ressources<div class="sd-summary-down docutils">
@@ -601,13 +697,16 @@ Autres ressources<div class="sd-summary-down docutils">
 </div>
 </details><br>
 <br>
-<h2> Quésako </h2>
+<h2> Un Journal d'Apprentissage Collaboratif ? </h2>
 <br>
 <br>
 <div style="width: 100%;"><div style="position: relative; padding-bottom: 116.67%; padding-top: 0; height: 0;"><iframe title="Introduction site Bahut" frameborder="0" width="1200" height="1300" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/670cf0893fdadb1a48abc7d6" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
+<br>
+<br>
+<p class="p-emphase"> <strong>Projet du Moment</strong></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Lien vers page Projet 1</p>
 </div>
 <div class="toctree-wrapper compound">
 </div>

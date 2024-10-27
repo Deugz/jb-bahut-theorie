@@ -35,8 +35,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/flash-card.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/style-phone-button.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/.ipynb_checkpoints/custom_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/.ipynb_checkpoints/flash-card-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/.ipynb_checkpoints/style-phone-button-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
@@ -92,6 +94,7 @@ var addUtterances = () => {
 }
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
+    <script src="../_static/assets/scripts/flash-card.js"></script>
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
@@ -107,7 +110,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
     <link rel="next" title="Glossaire" href="Glossaire.html" />
-    <link rel="prev" title="Gamma" href="../Tests/Gamma.html" />
+    <link rel="prev" title="REX" href="../Extras/REX/REX-Main.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fr"/>
   </head>
@@ -258,17 +261,13 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Intro/Le-bahut/Le-Bahut-main.html">Le Bahut</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Intro/Le-bahut/Intervenants/Intervenants-Main.html">Intervenants</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Intro/Le-bahut/ecocystem.html">Ecosystème</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../Intro/La-Promo.html">La Promo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Intro/Plateforme/Site.html">Cette Plateforme</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Scéances</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🎓 Scéances</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Seance/IntroDL/IntroDL.html">Le Digital Learning</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Seance/Inge-Peda/Inge-peda.html">Ingénierie pédagogique (ADDIE)</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Seance/Inge-Peda/Inge-peda.html">Ingénierie pédagogique (ADDIE)</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Seance/Inge-Peda/Analyse/Analyse.html">Analyse</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Seance/Inge-Peda/Design/Design.html">Design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Seance/Inge-Peda/Developement/Developement.html">Dévelopement</a></li>
@@ -276,69 +275,68 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Seance/Inge-Peda/Evaluation/Evaluation.html">Evaluation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../Seance/mecanisme-apprentissage.html">Les mécanismes de l’apprentissage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Seance/IA-intro.html">Introduction à l’IA</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Seance/Outils/Panormama-outils.html">Outils numériques en formation</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Seance/Outils/Organiser/Organiser.html">Organiser</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Seance/Outils/Creer/Creer.html">Créer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Seance/Outils/Animer/Animer.html">Animer</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../Seance/Outils/Heberger/Heberger.html">Héberger</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Seance/Outils/Heberger/Moodle.html">Moodle</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Seance/Apprentissage/mecanisme-apprentissage.html">Mécanismes d’apprentissage</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Seance/Apprentissage/Motivation/Motivation.html">Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Seance/Apprentissage/Memorisation/Memorisation.html">Mémorisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Seance/Apprentissage/Attention/Attention.html">Attention</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Seance/IA/IA-intro.html">Introduction à l’IA</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Seance/Bonnes-pratiques/Bonnes-pratiques-main.html">Bonnes pratiques</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Seance/Bonnes-pratiques/Design/Design-main.html">Design</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Seance/Bonnes-pratiques/Design/UX.html">UX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Seance/Bonnes-pratiques/Design/UI.html">UI</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../Seance/Bonnes-pratiques/Design/Exos/Exo-main.html">Exercices</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Seance/Bonnes-pratiques/Design/Exos/Ortographe/Ortographe-main.html">Introduction à l’ortographe</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Seance/Design/Design-main.html">Design</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Seance/Design/UX.html">UX</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Seance/Design/UI.html">UI</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../Seance/Design/Exos/Exo-main.html">Exercices</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../Seance/Design/Exos/Ortographe/Ortographe-main.html">Introduction à l’ortographe</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../Seance/Design/Exos/Ortographe/Acceuil-activit%C3%A9.html">Les Missions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Seance/Bonnes-pratiques/Ressources/Ressources-chaudes.html">Concevoir des « ressources chaudes »</a></li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../Seance/Ressources-chaudes.html">Concevoir des « ressources chaudes »</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Seance/Storyline.html">Introduction a Storyline</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Mises en Situations</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🛠 Outils</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../MES/Analyse-form.html">Analyse d’une formation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../MES/Amelio-formation.html">Amélioration d’une formation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Outils/Panormama-outils.html">Panorama</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Outils/Organiser/Organiser.html">Organiser</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Outils/Organiser/Tests/Supermemo.html">Supermemo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Outils/Organiser/Tests/Trello.html">Trello</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Entrainement</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../Entrainement/LMS/Outils-hebergement.html">Outils d’hébergement</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Entrainement/concept-prod-outils.html">Outils de conception et de production</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Entrainement/Genially.html">Atelier Genially</a></li>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Outils/Creer/Creer.html">Créer</a></li>
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Outils/Animer/Animer.html">Animer</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Outils/Animer/Tests/Digiscreen.html">Digiscreen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Outils/Animer/Tests/Klaxoon.html">Klaxoon</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projet</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Projet/Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/1-Lancement.html">Lancement</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/2-Preparation.html">Organisation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/3-Interview.html">Interview (Définition)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/4-Analyse.html">Analyse</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/5-Conception.html">Conception</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/6-Redaction.html">Rédaction / Grains</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/7-Storyboard.html">Storyboard</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/8-Production.html">Production</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/9-Integration.html">Intégration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Projet/Creation-module-e-learning/10-Test.html">Bêta-test</a></li>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Outils/Heberger/Heberger.html">Héberger</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Outils/Heberger/Tests/Moodle.html">Moodle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Outils/Heberger/Tests/360Learning.html">360 Learning</a></li>
 </ul>
 </li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Séminaires</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">✨ Projets / Portefolio</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../Webinaires/Seminaire1.html">Seminaire 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Projet/0-Analyse-formation/Analyse-form.html">Analyse / amélioration d’une formation</a></li>
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Projet/1-Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Projet/1-Creation-module-e-learning/Organisation/Lancement.html">Lancement / Organisation</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Projet/1-Creation-module-e-learning/Livrables/Livrables-Main.html">Livrables</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Projet/1-Creation-module-e-learning/Livrables/Experience-Utilisateur.html">Experience Utilisateur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Projet/1-Creation-module-e-learning/Livrables/Deroule-Pedagogiques.html">Déroulé Pédagogique</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tests</span></p>
+</li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🌍 Extras</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../Tests/Digiscreen.html">Digiscreen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Tests/Klaxoon.html">Klaxoon</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Tests/Gamma.html">Gamma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Extras/EcocystemDLM.html">Ecocystem DLM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Extras/Webinaires/Webinaires-main.html">Webinaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Extras/REX/REX-Main.html">REX</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="current nav bd-sidenav">
@@ -545,12 +543,12 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../Tests/Gamma.html"
+       href="../Extras/REX/REX-Main.html"
        title="page précédente">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">précédent</p>
-        <p class="prev-next-title">Gamma</p>
+        <p class="prev-next-title">REX</p>
       </div>
     </a>
     <a class="right-next"
