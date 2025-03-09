@@ -128,3 +128,16 @@ L'AI Act est une proposition de réglementation de l'Union européenne visant à
 - teaser vidéo: Runway
 
 
+
+## Chatboat
+
+- Chatbase
+
+
+```{admonition}
+
+IA et RGPD (plus c'est simple et moins c'est RGPD)
+
+```
+
+

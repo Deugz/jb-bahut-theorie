@@ -36,37 +36,8 @@ parts:
         - file: Seance/Bonnes-pratiques/Design/Exos/Exo-main
           sections:
           - file: Seance/Bonnes-pratiques/Design/Exos/Ortographe/Ortographe-main
-      - file: Seance/Bonnes-pratiques/Ressources/Ressources-chaudes 
-  - caption: 🛠 Outils
-    chapters:
-    - file: Outils/Panormama-outils
-    - file: Outils/Organiser/Organiser
-      sections:
-      - file: Outils/Organiser/Tests/Supermemo
-      - file: Outils/Organiser/Tests/Trello
-    - file: Outils/Creer/Creer
-      sections:
-      - file: Outils/Creer/Tests/Gamma
-      - file: Outils/Creer/Tests/Genially
-      - file: Outils/Creer/Tests/Storyline
-    - file: Outils/Animer/Animer
-      sections:
-      - file: Outils/Animer/Tests/Digiscreen
-      - file: Outils/Animer/Tests/Klaxoon
-    - file: Outils/Heberger/Heberger
-      sections:
-      - file: Outils/Heberger/Tests/Moodle
-      - file: Outils/Heberger/Tests/360Learning
-  - caption: ✨ Projets / Portefolio
-    chapters:
-    - file: Projet/0-Analyse-formation/Analyse-form    
-    - file: Projet/1-Creation-module-e-learning/E-learning-Main
-      sections:
-      - file: Projet/1-Creation-module-e-learning/Organisation/Lancement
-      - file: Projet/1-Creation-module-e-learning/Livrables/Livrables-Main
-        sections:
-        - file: Projet/1-Creation-module-e-learning/Livrables/Experience-Utilisateur
-        - file: Projet/1-Creation-module-e-learning/Livrables/Deroule-Pedagogiques
+      - file: Seance/Bonnes-pratiques/Ressources/Ressources-chaudes
+      - file: Seance/Bonnes-pratiques/Accessibilite/Accessibilite 
   - caption: 🌍 Extras
     chapters:
     - file: Extras/EcocystemDLM

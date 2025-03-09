@@ -17,6 +17,74 @@ Extraire les documents du discord
 
 ```
 
+
+
+- [Mindsmith](https://www.mindsmith.ai/)
+
+```{note}
+
+Outil pour créer des modules e-learning grace a l'IA
+
+
+```
+
+
+## Portefolio
+
+- [Bonne ressource](https://www.dropbox.com/scl/fi/dk2zt2u8iw2y5kxh02rze/CONSTRUIRE-SON-PORTFOLIO.pdf?rlkey=4lwx78y0ypkwyfvup27wyan0p&e=3&dl=0)
+
+
+## Class virtuelle
+
+
+
+- [OBS Studio](https://obsproject.com/fr)
+
+```{note}
+
+Logiciel libre et open source d'enregistrement vidéo et de streaming en direct.
+
+```
+
+- [Tuto Thomas ponse](https://www.youtube.com/watch?time_continue=200&v=qIhidJMpURw&embeds_referring_euri=https%3A%2F%2Fle-bahut-lyon.notion.site%2F&source_ve_path=MzY4NDIsMjg2NjY)
+
+- [Lien bahut boite a outil](https://le-bahut-lyon.notion.site/Boite-outils-Set-up-Classe-Virtuelle-e13f7cf488514851a7b26e07a9cb685f)
+
+- [Prezzup](https://www.artean.io/)
+
+```{note}
+
+Outil pour créer des présentations vidéos avec support
+
+```
+
+## RNCP ?
+
+- [Conception et production de ressources e-learning](https://www.francecompetences.fr/recherche/rs/5518/)
+
+
+## Vrac
+
+
+- [elearningstack](https://elearningstack.com/)
+
+- [elearning heroes](https://community.articulate.com/)
+
+- [blog articulate](https://blogs.articulate.com/les-essentiels-du-elearning/7-conseils-pour-rediger-des-scenarios-e-learning-efficaces/)
+
+- [blog articulate aussi](https://blogs.articulate.com/les-essentiels-du-elearning/author/alamotte/page/3/)
+
+```{note}
+
+Kinnu
+
+```
+
+- [Utilisation ethique de l'IA](https://oer.uclouvain.be/jspui/bitstream/20.500.12279/1089.3/6/CahierLLL_IAG_OKOER.pdf)
+
+
+- [L'atelier du formateur](https://latelierduformateur.fr/module-en-ligne-agir-pour-un-numerique-responsable/)
+
 ## Aides
 
 ```{admonition}  financières
@@ -141,3 +209,7 @@ Adhérer ?
 
 
 ```
+
+## IA
+
+- [Comparateur IA gouvernement](https://www.comparia.beta.gouv.fr/)

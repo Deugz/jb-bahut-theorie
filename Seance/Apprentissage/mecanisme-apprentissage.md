@@ -1,5 +1,45 @@
 # Mécanismes d'apprentissage
 
+## Quelle(s) approche(s) pour appréhender l’apprentissage ?
+
+### Entre théorie et pratique
+
+Comprendre l’apprentissage suppose d’adopter plusieurs points de vue, apportées notamment par des disciplines comme les sciences cognitives ou la pédagogie. Plusieurs regards se croisent, d’une part celui du concepteur (et/ou formateur) et d’autre part, celui du chercheur, afin de constituer l’approche du pédagogue. De manière caricaturale, entre une vision **idéale** de l’apprentissage, apportée par le chercheur et un regard plus **réel**, apporté par les pratiques de terrain, il s’agit de chercher **l’optimal**, approche portée par la pédagogie.
+
+
+```{figure} Docs/Approche.png
+---
+width: 100%
+name: Approche-apprentissage
+---
+Les différents acteurs de l'apprentissage
+```
+
+#### Théorie de l'apprentissage
+
+```{note}
+
+- Connectivisme / constructivisme (cf cours classe virtuelle)
+
+
+```
+
+## Qu’est-ce que l’apprentissage ?
+
+<p class="p-emphase2">Pour les sciences cognitives, l’apprentissage est processus global qui met en relation des opérations cognitives précises, telles que l’ATTENTION, la MÉMORISATION ou encore la MOTIVATION. </p>
+
+<br>
+
+> Ces mécanismes peuvent être étudiés spécifiquement. Mais il convient d’adopter également une perspective transversale, grâce à des théories plus globale, telle que la théorie cognitive de l’apprentissage multimédia de MAYER. Nous retenons d’ailleurs **la définition de [MAYER](https://www.notion.so/a7b4d0ee2155409bb56406fa66182b93?pvs=21)** concernant **l’apprentissage :**
+
+<br>
+
+```{image} Docs/Définition_Mayer.png
+:width: 100%
+```
+
+
+
 
 ## Padlet Ressources
 
@@ -70,120 +110,7 @@ Chercheur: Franck Ramus (Tedx conférence)
 
 ```
 
-### Motivation
 
-```{note}
-
-Vidéo: Impuissance aprise
-
-
-- Aisance avec le numérique
-- Prérequis
-
-```
-
-
-```{note}
-
-Diagrame des croyance
-
-- créer un tab-item avec les différentes experiences associés
-
-```
-
-```{warning}
-
-- Comment générer un effet Pygmalion dans la classe
-
-
-```
-
-
-Experience effet pygmalion - checker l'experience (marche aussi sur les rats)
-
-
-```{note}
-
-Menace du stéréotype
-
-```
-
-Les stéréotype sont facilement reproductibles experimentalement lorsqu'on on les introduits dans l'experience.
-
-- ex: femme au volant
-
-#### Comment motiver un apprenant
-
-```{note}
-
-Plein de théories
-
-```
-
-- plus interessant pour nous Deci-Rayan 1985
-
-Besoin de choix, compétence et relation aux autres. Concept de *flow*
-
-- extrinsèque
-    - récompense
-    
-A éviter d'utiliser en tant que producteur (manque de créativité car pas intéréssé par l'activité)
-
-ex: religion chrétienne (je suis gentil pour ne pas aller en enfer)
-
-
-- intrinsèque 
-
-
-
-```{note}
-
-Important a déterminer lorsque l'on étudie la cible
-
-```
-
-
-```{warning}
-
-La gamification (avec gaganant) peut transformer une motivation intrinsèque en extrinsèque
-
-- TedX Dan Pink experience de la bougie 
-
-```
-
-Motivation extrinsèque diminue l'abilité à la créativité
-
-- Engagement situationel
-    - sens
-    - humour
-    - ...
-    
-    
-```{note}
-
-- Règle des 3 F sylvain tillon Tedx
-
-
-```
-
-- mémo:
-
-Autonomie
-
-- checker **apprentissage par découverte** - checker discord pour ressource
-
-- déconstruire la formation (annoncer le format en début de formation)
-
-
-```{note}
-
-Diagramme de flow
-
-- Bande fine
-
-adaptabilité permet de générer un mouvement de flow pour chaqun des apprenants avec des compétences disparates.
-
-```
 
 ### Mémorisation
 

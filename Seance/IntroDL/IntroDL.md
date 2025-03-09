@@ -552,6 +552,25 @@ Les LMS qu’on utilise au Bahut :
 
 ```
 
+
+### Examples
+
+```{note}
+
+Liste d'examples en vrac issus de [Notion Bahut Lyon](https://le-bahut-lyon.notion.site/R-f-rences-67c3598219dc4761ab7afd5ea78c339c)
+
+
+```
+
+- [nommage des fichiers](https://proposition.sydo.fr/viewer_ref/1654683848205x763052814216200200)
+
+
+- [Les règles de l'écriture égalitaire](https://proposition.sydo.fr/viewer_ref/1631113928405x379192741019516900)
+
+- [Sensibiliser pratiques éco-reponsables en entreprise](https://proposition.sydo.fr/viewer_ref/1643129473847x135885077592145920)
+
+- []()
+
 ### Pour ou contre le e-learning
 
 Le e-learning fait partie du digital learning (mais le digital learning inclut aussi les formations présentiels - à travers l'utilisation d'outils numériques).
@@ -567,6 +586,10 @@ Quand on fixe des objectifs de formation, ils doivent être
 - précis
 - modestes
 - mesurables
+
+
+
+
 
 ## Communauté DLM
 

@@ -1,4 +1,4 @@
-# Déroulé Pédagogique
+# Ingénieurie Pédagogique
 
 ```{note}
 
@@ -15,7 +15,6 @@ Revoir le format:
 ```
 
 ## Module 1
-
 
 ### Grain 1: Introduction
 
@@ -166,8 +165,6 @@ Captures décran
 ```{note}
 
 Insérer un diagramme génialie avec les différents temps des grains et l'interactivité
-
-
 
 ```
 
