@@ -1,5 +1,7 @@
 # To Do
 
+
+
 ```{note}
 
 Extraire les documents du discord
@@ -14,8 +16,11 @@ Extraire les documents du discord
 - Recopier les cours
     - créer un trello pour garder le compte 
 
+- Créer une section Intelligence collective
 
 ```
+
+
 
 
 

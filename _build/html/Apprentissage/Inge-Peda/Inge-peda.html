@@ -1,0 +1,1319 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="fr" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingénierie pédagogique (ADDIE) &#8212; DLM</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/flash-card.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/style-phone-button.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/.ipynb_checkpoints/custom_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/.ipynb_checkpoints/flash-card-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/.ipynb_checkpoints/style-phone-button-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/jb-bahut");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../_static/assets/scripts/flash-card.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Apprentissage/Inge-Peda/Inge-peda';</script>
+    <link rel="canonical" href="https://deugz.github.io/jb-bahut/_build/html/Apprentissage/Inge-Peda/Inge-peda.html" />
+    <link rel="shortcut icon" href="../../_static/Bahut-logo.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Analyse" href="Analyse/Analyse.html" />
+    <link rel="prev" title="Le Digital Learning" href="../IntroDL/IntroDL.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/Bahut-logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/Bahut-logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/Encyclopedia-Home/build/html/index.html" title="Home" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-house"></i></span>
+            <label class="sr-only">Home</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/nb-profile/_build/html/intro.html" title="Profile" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-user"></i></span>
+            <label class="sr-only">Profile</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/ab-blog/_website/index.html" title="Blog" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-blog"></i></span>
+            <label class="sr-only">Blog</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/nb-tools/_build/html/intro.html" title="Tools" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-screwdriver-wrench"></i></span>
+            <label class="sr-only">Tools</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io" title="Forum" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-comments"></i></span>
+            <label class="sr-only">Forum</label></a>
+        </li>
+</ul></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../to-include.html">To Do</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Intro/La-Promo.html">La Promo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Intro/Plateforme/Site.html">Cette Plateforme</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🎓 Scéances</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../IntroDL/IntroDL.html">Le Digital Learning</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Ingénierie pédagogique (ADDIE)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Analyse/Analyse.html">Analyse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Design/Design.html">Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Developement/Developement.html">Dévelopement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Implementation/Implementation.html">Implementation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Evaluation/Evaluation.html">Evaluation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Apprentissage/mecanisme-apprentissage.html">Mécanismes d’apprentissage</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Apprentissage/Motivation/Motivation.html">Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Apprentissage/Memorisation/Memorisation.html">Mémorisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Apprentissage/Attention/Attention.html">Attention</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../IA/IA-intro.html">Introduction à l’IA</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Bonnes-pratiques/Bonnes-pratiques-main.html">Bonnes pratiques</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Bonnes-pratiques/Design/Design-main.html">Design</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Bonnes-pratiques/Design/UX.html">UX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Bonnes-pratiques/Design/UI.html">UI</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../Bonnes-pratiques/Design/Exos/Exo-main.html">Exercices</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Bonnes-pratiques/Design/Exos/Ortographe/Ortographe-main.html">Introduction à l’ortographe</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Bonnes-pratiques/Ressources/Ressources-chaudes.html">Concevoir des « ressources chaudes »</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Bonnes-pratiques/Accessibilite/Accessibilite.html">Accessibilité</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../EcocystemDLM.html">Ecocystem DLM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Webinaires/Webinaires-main.html">Webinaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../REX/REX-Main.html">REX</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🌍 Conception</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Conception/Conception-main.html">Conception</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Conception/Opquast/Opquast-main.html">Opquast</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🌍 Intelligence Collective</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Intelligence-collective/IC-main.html">Intelligence Collective</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Appendices/List.html">Listes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Appendices/Glossaire.html">Glossaire</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/Apprentissage/Inge-Peda/Inge-peda.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Ingénierie pédagogique (ADDIE)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fondamentaux">Fondamentaux</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#behaviorisme">BEHAVIORISME</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#constructivisme">CONSTRUCTIVISME</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#socio-constructivisme">SOCIO-CONSTRUCTIVISME</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#piloter-un-projet-de-formation">Piloter un projet de formation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-besoin">Le Besoin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ingenieurie-de-formation-vs-ingenieurie-pedagogique">Ingénieurie de Formation vs Ingénieurie pédagogique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-diapo-efficace">La Diapo efficace</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#le-modele-addie">Le modèle ADDIE</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-version-sydo">La version Sydo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#les-besoins">Les Besoins</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#type-de-formations">Type de formations</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#besoins-en-formation">Besoins en formation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercice">Exercice:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sceance-2">Scéance 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cahier-des-charges">Cahier des charges</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ingenieurie-pedagogique">Ingénieurie pédagogique</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sceance-3">Scéance 3</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#taxonomie-de-bloom">Taxonomie de Bloom</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-alignement-pedago">L’alignement pédago</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sceance-4">Scéance 4</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-d-evaluation">3 types d’évaluation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#description-du-type-d-evaluation">Description du type d’évaluation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contexte-d-utilisation-de-l-evaluation">Contexte d’utilisation de l’évaluation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#finalite-de-l-evaluation">Finalité de l’évaluation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-d-usage-un-exemple-reprenant">Cas d’usage, un exemple reprenant</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pertinence-d-utilisation-selon-les-modalites-et-le-contexte-d-apprentissage">Pertinence d’utilisation selon les modalités et le contexte d’apprentissage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sceance-5">Scéance 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pres-1">Pres 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pres-2">Pres 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-de-questions">Types de questions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sceance-6">Scéance 6</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#travail-de-groupe">Travail de groupe</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methodes-et-approches-pedas">Méthodes et approches pédas</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#expositive">Expositive</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#demonstrative">Démonstrative</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interrogative">Interrogative</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#active">Active</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-cycle-de-kolb">Le cycle de Kolb</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deductif">Déductif</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#inductif">Inductif</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recette-magique">Recette magique</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="ingenierie-pedagogique-addie">
+<h1>Ingénierie pédagogique (ADDIE)<a class="headerlink" href="#ingenierie-pedagogique-addie" title="Lien permanent vers cette rubrique">#</a></h1>
+<hr class="docutils" />
+<br>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<br>
+<div id="div-colour">
+<p>🕐: 24/09/24 pm
+<br>
+✍️: en cours
+<br>
+🚧: 05/10<br />
+Version: 0.1
+<br>
+<strong>Révisions</strong>: ❌</p>
+</div>    
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="admonition-objectif-s-pedagogique-s admonition">
+<p class="first admonition-title">Objectif(s) pédagogique(s)</p>
+<ul class="last simple">
+<li>Identifier les besoins de formation</li>
+<li>S’approprier …</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="fondamentaux">
+<h2>Fondamentaux<a class="headerlink" href="#fondamentaux" title="Lien permanent vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li>Extraire les information de ce <a class="reference external" href="https://media.licdn.com/dms/document/media/v2/D4E1FAQEElbN5LELwAw/feedshare-document-pdf-analyzed/B4EZPOY9eIHwAc-/0/1734334481236?e=1735171200&amp;v=beta&amp;t=6Sgl_tQc6cDgTAyJjMNuG88qyukHi4lg0j4FaOYwcQI" rel="noopener noreferrer" target="_blank">ppt</a></li>
+</ul>
+<div class="section" id="behaviorisme">
+<h3>BEHAVIORISME<a class="headerlink" href="#behaviorisme" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>«&nbsp;LE COMPORTEMENT HUMAIN PEUT ÊTRE
+FAÇONNÉ PAR LE RENFORCEMENT POSITIF ET
+NÉGATIF, DE SORTE QUE LES INDIVIDUS
+PEUVENT ÊTRE ENCOURAGÉS À DÉVELOPPER
+DES COMPÉTENCES ET DES
+COMPORTEMENTS SOUHAITÉS&nbsp;»</p>
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+<div class="section" id="constructivisme">
+<h3>CONSTRUCTIVISME<a class="headerlink" href="#constructivisme" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>«&nbsp;L’INTELLIGENCE N’EST PAS CE
+QUE L’ON SAIT, MAIS CE QUE
+L’ON FAIT QUAND ON NE SAIT
+PAS.&nbsp;»</p>
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+<div class="section" id="socio-constructivisme">
+<h3>SOCIO-CONSTRUCTIVISME<a class="headerlink" href="#socio-constructivisme" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>«&nbsp;LE DÉVELOPPEMENT INTELLECTUEL
+NE PEUT ÊTRE COMPRIS QU’EN LE
+PLAÇANT DANS LE CONTEXTE
+SOCIAL ET CULTUREL DANS LEQUEL
+IL SE DÉROULE.&nbsp;»</p>
+</div>
+</div>
+<div class="section" id="piloter-un-projet-de-formation">
+<h2>Piloter un projet de formation<a class="headerlink" href="#piloter-un-projet-de-formation" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="admonition-exercice admonition">
+<p class="first admonition-title">Exercice</p>
+<p><a class="reference external" href="https://docs.google.com/presentation/d/1Ephk903Za39rr5uRHyHwOJNAKOpKYGyz/edit#slide=id.p1" rel="noopener noreferrer" target="_blank">Liens</a></p>
+<ul class="last simple">
+<li>Comment (par quelles étapes) sydo est il passé pour réaliser ce module de formation</li>
+<li><a class="reference external" href="https://elearning.sydo.fr/AFD/Climat/Capsule2/" rel="noopener noreferrer" target="_blank">La formation</a></li>
+</ul>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>La formation</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">La formation proprement dite, c’est-à-dire que les participants seront capables de faire quelque chose à l’issue de la formation, quelque chose de nouveau, une opération complexe. La formation est un développement de certaines facultés.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>L’information</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">L’information quand on parle à quelqu’un pour lui dire des choses qu’il ne connaît pas, on
+ne le forme pas, on l’informe. On veut juste que
+les participants en sachent plus après la session
+qu’avant.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>La sensibilisation</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">La sensibilisation différente de l’information
+en ce qu’on cherche à faire en sorte que les
+cibles découvrent un pb et le comprennent,
+prennent conscience d’un risque.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="le-besoin">
+<h3>Le Besoin<a class="headerlink" href="#le-besoin" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Il est un écart entre compétences constatées et compétences attendues : il est donc en quelque sorte un problème ; Il résulte d’un dysfonctionnement ou d’une évolution ; Il peut être identifié à différents moments et par différents acteurs (les futurs formés eux-mêmes, la hiérarchie, un expert par exemple) ; Il doit être communiqué aux formés, aussi bien que les objectifs (trop souvent, les gens ne savent pas ce qu’ils font là…).</p>
+</div>
+<div class="section" id="ingenieurie-de-formation-vs-ingenieurie-pedagogique">
+<h3>Ingénieurie de Formation vs Ingénieurie pédagogique<a class="headerlink" href="#ingenieurie-de-formation-vs-ingenieurie-pedagogique" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Ingénieur de formation</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">L’ingénierie de la formation s’articule autour de 4 étapes clés:</p>
+<ul class="simple">
+<li><p class="sd-card-text first"><strong>L’analyse des besoins</strong>: L’idée est de comprendre les objectifs et les besoins des apprenants et du commanditaire.</p>
+</li>
+<li><p class="sd-card-text first"><strong>Le choix des dispositifs de formation</strong>: A ce stade, le travail de l’ingénieur va être de créer un projet de formation selon les besoins déterminés lors de la première étape, et les outils pédagogiques nécessaires.</p>
+</li>
+<li><p class="sd-card-text first"><strong>L’animation et le pilotage</strong>: Le rôle de l’ingénieur de formation n’est pas de piloter ou d’animer les modules de formation. En revanche, il doit s’assurer que la formation se déroule comme prévu. Son travail sera alors celui de «&nbsp;chef d’orchestre&nbsp;».</p>
+</li>
+<li><p class="sd-card-text first"><strong>L’évaluation et l’itération</strong>: Enfin, l’ingénieur devra évaluer le plan de formation global pour vérifier son bon déroulement et l’atteinte ou non des objectifs. Il devra alors, dans une démarche itérative, donner des suggestions d’amélioration pour les prochains projets de formation</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Ingénieur pédagogique</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">L’ingénierie de la formation consiste à déterminer le projet de la formation, alors que <strong>l’ingénierie pédagogique concerne uniquement le contenue</strong></p>
+<p class="sd-card-text">L’ingénieur de formation rédige la recette, alors que l’ingénieur pédagogique prend le rôle de chef patissier</p>
+<p class="sd-card-text">L’ingénierie pédagogique a pour objectif de <strong>déterminer les ressources</strong> internes et externes nécessaires à la création de la formation. Elle s’arrête d’avantage sur l’aspect «&nbsp;pédagogique&nbsp;» du contenue.</p>
+<p class="sd-card-text">Au niveau opérationnel, l’ingénieur pédagogique prodigue des conseils quand aux sujets à aborder et à la façon dont il faut les amener auprès des apprenants. Pour lui apporter une réponse pertinente, l’ingénieur pédagogique devra consulter l’ingénieur de formation qui lui fera part de ses analyses et de ses études pour ce projet de formation, s’il n’est pas la même personne !</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="la-diapo-efficace">
+<h3>La Diapo efficace<a class="headerlink" href="#la-diapo-efficace" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="figure align-default" id="diapo-efficace">
+<a class="reference internal image-reference" href="../../_images/Diapo-efficace.png"><img alt="../../_images/Diapo-efficace.png" src="../../_images/Diapo-efficace.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">La diapo efficace</span><a class="headerlink" href="#diapo-efficace" title="Lien permanent vers cette image">#</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="le-modele-addie">
+<h2>Le modèle ADDIE<a class="headerlink" href="#le-modele-addie" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="figure align-default" id="addie-method">
+<a class="reference internal image-reference" href="../../_images/ADDIE-Capture.png"><img alt="../../_images/ADDIE-Capture.png" src="../../_images/ADDIE-Capture.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Le modèle ADDIE <a class="reference external" href="https://yaplusk.fr/ingenierie-pedagogique-formation/" rel="noopener noreferrer" target="_blank">Source</a></span><a class="headerlink" href="#addie-method" title="Lien permanent vers cette image">#</a></p>
+</div>
+<p>Utiliser le site suivant: <a class="reference external" href="https://yaplusk.fr/ingenierie-pedagogique-formation/#ETAPE_1_ANALYSE" rel="noopener noreferrer" target="_blank">Lien</a> pour implémenter les tabs</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Les différentes étapes<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+Analyse</label><div class="sd-tab-content docutils">
+<blockquote>
+<div><p class="sd-card-text">Cette phase nous permet de collecter toutes les informations nécessaires à la mise en place de notre parcours de formation : contexte, besoins, enjeux, situation désirée, contraintes logistiques, budgétaires, temporelles, etc. À l’issue de cette étape, nous avons à notre disposition un <strong>cahier des charges</strong> qui reprend l’ensemble des éléments clés liés à la formation que nous allons dispenser.</p>
+</div></blockquote>
+<p class="sd-card-text">**Méthode des 7P:</p>
+<ul class="simple">
+<li><p class="sd-card-text first">Purpose (enjeux, objectifs)</p>
+</li>
+<li><p class="sd-card-text first">People (public concerné)</p>
+</li>
+<li><p class="sd-card-text first">Product (compétences à acquérir)</p>
+</li>
+<li><p class="sd-card-text first">Preparation (prérequis, ce qui peut être fait en amont)</p>
+</li>
+<li><p class="sd-card-text first">Practical Concerns (éléments logistiques)</p>
+</li>
+<li><p class="sd-card-text first">Pitfalls (risques)</p>
+</li>
+<li><p class="sd-card-text first">Process (synopsis pédagogique, nous verrons cela dans la partie Design)</p>
+</li>
+</ul>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+Design</label><div class="sd-tab-content docutils">
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+Développement</label><div class="sd-tab-content docutils">
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-3">
+Implémentation</label><div class="sd-tab-content docutils">
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-4">
+Evaluation</label><div class="sd-tab-content docutils">
+</div>
+</div>
+</div>
+</details><ul class="simple">
+<li>Analyse<ul>
+<li>Client (culture d’entreprise)</li>
+<li>Besoin</li>
+<li>décision sur les outils</li>
+</ul>
+</li>
+<li>Design<ul>
+<li>Ma proposition</li>
+<li>Scématique</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Co-design: utile surtout dans une production en interne</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Powerpoint partagé avec commentaires du client</p>
+</div>
+<ul class="simple">
+<li>Dévelopement<ul>
+<li>Théorie / Pratique</li>
+<li>utilisation Outils</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Capture d’écran de chaque écran</p>
+</div>
+<ul class="simple">
+<li>Implémentation</li>
+<li>Evaluation<ul>
+<li>du module</li>
+<li>du dispositif de formation</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Modèle de Kirkpatrick</p>
+</div>
+<ul class="simple">
+<li>Niveau 1: si oui, on continue (si non, se demandé pourquoi et on retravaille le module)</li>
+<li></li>
+</ul>
+<p>Différence entre ingénieurie de formation et ingénieurie pédagogique</p>
+<ul class="simple">
+<li>Ingénieurie de formation (comprend plusieurs modules pédagogiques)</li>
+</ul>
+<div class="section" id="la-version-sydo">
+<h3>La version Sydo<a class="headerlink" href="#la-version-sydo" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="figure align-default" id="addie-sydo-method">
+<a class="reference internal image-reference" href="../../_images/ADDIE-Sydo-Capture.png"><img alt="../../_images/ADDIE-Sydo-Capture.png" src="../../_images/ADDIE-Sydo-Capture.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Le modèle ADDIE tel qu’imaginé par Sydo (lien)</span><a class="headerlink" href="#addie-sydo-method" title="Lien permanent vers cette image">#</a></p>
+</div>
+</div>
+<div class="section" id="les-besoins">
+<h3>Les Besoins<a class="headerlink" href="#les-besoins" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="section" id="type-de-formations">
+<h4>Type de formations<a class="headerlink" href="#type-de-formations" title="Lien permanent vers cette rubrique">#</a></h4>
+<ul class="simple">
+<li>Formation: aquisition de compétence</li>
+<li>Information: apprendre plus sur un sujet mais sans formation de besoin d’execution</li>
+<li>Sensibilisation: identifier un problème et en faire prendre conscience</li>
+</ul>
+</div>
+<div class="section" id="besoins-en-formation">
+<h4>Besoins en formation<a class="headerlink" href="#besoins-en-formation" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>fossé entre la ou on est et la ou ils ont besoin d’être.</p>
+<ul class="simple">
+<li>Dysfonctionnement ou évolution</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="exercice">
+<h2>Exercice:<a class="headerlink" href="#exercice" title="Lien permanent vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li>Kahoot: <a class="reference external" href="https://create.kahoot.it/share/le-bahut-inge-peda/8821c1ad-dead-49f6-9cbd-1e3c39f4c4a5" rel="noopener noreferrer" target="_blank">Lien</a></li>
+</ul>
+</div>
+<div class="section" id="sceance-2">
+<h2>Scéance 2<a class="headerlink" href="#sceance-2" title="Lien permanent vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li>25/09/24 matin</li>
+</ul>
+<div class="admonition-objectif-s-pedagogique-s admonition">
+<p class="first admonition-title">Objectif(s) pédagogique(s)</p>
+<ul class="last simple">
+<li>Analyser un cahier des charges</li>
+<li>Définir l’expression ingénierie pédagogique</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Exercice définition d’un cahier des charges</p>
+</div>
+<p>Objectifs primaires, secondaires, tertiaires</p>
+<div class="section" id="cahier-des-charges">
+<h3>Cahier des charges<a class="headerlink" href="#cahier-des-charges" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Checker Google Drive pour example de cahier des charges (EDF - assé contractuels)</p>
+</div>
+</div>
+<div class="section" id="ingenieurie-pedagogique">
+<h3>Ingénieurie pédagogique<a class="headerlink" href="#ingenieurie-pedagogique" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Analyse besoins = ingénieur de formation - pilote (ingé péda peut aussi faire ca) - la différence entre les deux est maigre</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Discussion collective</p>
+</div>
+<div class="admonition-outil-de-gestion-de-projet admonition">
+<p class="first admonition-title">Outil de gestion de projet</p>
+<ul class="last simple">
+<li><a class="reference external" href="https://www.ganttproject.biz/" rel="noopener noreferrer" target="_blank">ganttproject</a></li>
+</ul>
+</div>
+<ul class="simple">
+<li>Association: <a class="reference external" href="https://www.hub-anstia.fr/" rel="noopener noreferrer" target="_blank">ANSTIA</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="sceance-3">
+<h2>Scéance 3<a class="headerlink" href="#sceance-3" title="Lien permanent vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li>25/09/24 aprem</li>
+</ul>
+<div class="admonition-objectif-s-pedagogique-s admonition">
+<p class="first admonition-title">Objectif(s) pédagogique(s)</p>
+<ul class="last simple">
+<li>Distinguer objectif de formation et objectif pédagogique</li>
+<li>Formuler clairement un objectif pédagogique (en mettant à profit la taxonomie de Bloom)</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Insérer diagrame et référence pour la taxonomie de bloom</p>
+</div>
+<div class="figure align-default" id="bloom-taxonomy">
+<a class="reference internal image-reference" href="Apprentissage/Inge-Peda/Docs/Bloom-taxonomy-schema.png"><img alt="Apprentissage/Inge-Peda/Docs/Bloom-taxonomy-schema.png" src="Apprentissage/Inge-Peda/Docs/Bloom-taxonomy-schema.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">La taxonomie de Bloom <a class="reference external" href="https://lms.fun-mooc.fr/c4x/ENSCachan/20005/asset/s2_ressourcesutiles_taxonomiedeBloom.pdf" rel="noopener noreferrer" target="_blank">Source</a></span><a class="headerlink" href="#bloom-taxonomy" title="Lien permanent vers cette image">#</a></p>
+</div>
+<ul class="simple">
+<li><a class="reference internal" href="#bloom-taxonomy"><span class="std std-ref">La taxonomie de Bloom Source</span></a></li>
+</ul>
+<p>Autre documentation: <a class="reference external" href="https://www.unige.ch/dife/files/3514/5372/9196/Taxonomies-verbes-action_SEA-2015.pdf" rel="noopener noreferrer" target="_blank">ic</a></p>
+<ul class="simple">
+<li>Savoir (théorie, connaissances pures)</li>
+<li>savoir-etre (comportementale, molle, soft skills)</li>
+<li>savoir-faire (hard skills)</li>
+</ul>
+<p>classification fiche rncp</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">exercice de groupe</p>
+</div>
+<p>Objectifs pédagogique:</p>
+<ul class="simple">
+<li>Moteur: le point de mire (la ou je dois aller)</li>
+<li>Contrat: celui que j’ai passé avec moin commendiataire, mon apprenant …</li>
+<li>Garde fou: ce que je vais mettre en oeuvre pour atteindre mon objectif (cf Bloom)</li>
+</ul>
+<p class="emphase">" A l'issue de la formation, l'apprenant sera capable de "verbe d'action""</p>
+<div class="admonition warning">
+<p class="first admonition-title">Avertissement</p>
+<p class="last">Un objectifs doit être réaliste et mesurable</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">concept de la pèragogie - méthode active</p>
+</div>
+<p>L’apprenant doit être au coeur de sa stratégie d’apprentissage</p>
+<p>L’objectif doit être</p>
+<ul class="simple">
+<li>Mesurable</li>
+<li>Réaliste</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Avertissement</p>
+<p class="last">En tant qu’ingénieur pédagogique, il faut se détacher du contenue !!!</p>
+</div>
+<ul class="simple">
+<li>Contextualiser les objectifs, surtout les softs skills (plus ils sont contextualisés, plus ils sont faciles a mettre en oeuvre)</li>
+<li>Tableau synoptique (a checker)</li>
+</ul>
+<div class="section" id="taxonomie-de-bloom">
+<h3>Taxonomie de Bloom<a class="headerlink" href="#taxonomie-de-bloom" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Insérer roue taxonomie (inséré dans les ressources)</p>
+</div>
+<p>La bible</p>
+</div>
+<div class="section" id="l-alignement-pedago">
+<h3>L’alignement pédago<a class="headerlink" href="#l-alignement-pedago" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Alignement entre objectifs péda et activités mises en oeuvre</p>
+</div>
+</div>
+<div class="section" id="sceance-4">
+<h2>Scéance 4<a class="headerlink" href="#sceance-4" title="Lien permanent vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li>30/09/24 aprem</li>
+</ul>
+<div class="admonition-objectif-s-pedagogique-s admonition">
+<p class="first admonition-title">Objectif(s) pédagogique(s)</p>
+<ul class="last simple">
+<li>Définir l’évaluation</li>
+<li>Distinguer 4 niveaux d’évaluation</li>
+</ul>
+</div>
+<p>alignement pédagogique adéquation entre objectifs et l’évaluation</p>
+<div class="section" id="types-d-evaluation">
+<h3>3 types d’évaluation<a class="headerlink" href="#types-d-evaluation" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>diagnostique</li>
+<li>formative</li>
+<li>sommative (évaluative)</li>
+</ul>
+</div>
+<div class="section" id="description-du-type-d-evaluation">
+<h4>Description du type d’évaluation<a class="headerlink" href="#description-du-type-d-evaluation" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>Faire le bilan des connaissances et compétences aquises (ou non) par l’apprenant, a la fin de la séquence de formation</p>
+</div>
+<div class="section" id="contexte-d-utilisation-de-l-evaluation">
+<h4>Contexte d’utilisation de l’évaluation<a class="headerlink" href="#contexte-d-utilisation-de-l-evaluation" title="Lien permanent vers cette rubrique">#</a></h4>
+</div>
+<div class="section" id="finalite-de-l-evaluation">
+<h4>Finalité de l’évaluation<a class="headerlink" href="#finalite-de-l-evaluation" title="Lien permanent vers cette rubrique">#</a></h4>
+</div>
+<div class="section" id="cas-d-usage-un-exemple-reprenant">
+<h4>Cas d’usage, un exemple reprenant<a class="headerlink" href="#cas-d-usage-un-exemple-reprenant" title="Lien permanent vers cette rubrique">#</a></h4>
+</div>
+<div class="section" id="pertinence-d-utilisation-selon-les-modalites-et-le-contexte-d-apprentissage">
+<h4>Pertinence d’utilisation selon les modalités et le contexte d’apprentissage<a class="headerlink" href="#pertinence-d-utilisation-selon-les-modalites-et-le-contexte-d-apprentissage" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">récupérer les fiches mémos des différents groupes</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Adaptative learning. Difficile et coute très cher</p>
+<p class="last">Ne pas hésiter a proposer aux formateurs de mettre en place des feedbacks</p>
+</div>
+<ul class="simple">
+<li>constante maccabre: si tout le monde a une bonne note, trop facile. Si tout le monde a une mauvaise note (ils sont mauvais). Mais pas de reflexion sur l’alignement pédagogique</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="sceance-5">
+<h2>Scéance 5<a class="headerlink" href="#sceance-5" title="Lien permanent vers cette rubrique">#</a></h2>
+<p><strong>Blitz Formation</strong></p>
+<ul class="simple">
+<li>01/10/24 journée</li>
+</ul>
+<div class="admonition-objectif-s-pedagogique-s admonition">
+<p class="first admonition-title">Objectif(s) pédagogique(s)</p>
+<ul class="last simple">
+<li>Définir chaque étape du modèle ADDIE</li>
+<li>Caractériser un besoin en formation</li>
+<li>Concevoir un déroulé pédagogique</li>
+<li>Mettre à profit la taxonomie de Bloom et formuler clairement un objectif pédagogique</li>
+</ul>
+</div>
+<p>Bonne formation: objectifs pertinents et atteints</p>
+<p>Consigne: doubler, orale et écrit</p>
+<div class="section" id="pres-1">
+<h3>Pres 1<a class="headerlink" href="#pres-1" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>Problème mise en place nuage de mot</li>
+<li>humour sympa</li>
+<li>pas d’example de chant</li>
+<li>pratique est génial (bamba ye)</li>
+<li>diapo est pas hyper engageant (j’ai pas lu)</li>
+</ul>
+</div>
+<div class="section" id="pres-2">
+<h3>Pres 2<a class="headerlink" href="#pres-2" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>interactivité chouette</li>
+<li>comptage avant de dire le mot ()</li>
+</ul>
+</div>
+<div class="section" id="types-de-questions">
+<h3>Types de questions<a class="headerlink" href="#types-de-questions" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>QCM</li>
+<li>ouvertes: créativité</li>
+</ul>
+</div>
+</div>
+<div class="section" id="sceance-6">
+<h2>Scéance 6<a class="headerlink" href="#sceance-6" title="Lien permanent vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li>02/10/24 matin</li>
+</ul>
+<div class="admonition-objectif-s-pedagogique-s admonition">
+<p class="first admonition-title">Objectif(s) pédagogique(s)</p>
+<ul class="last simple">
+<li>Définir chaque étape du modèle ADDIE</li>
+<li>Caractériser un besoin en formation</li>
+<li>Mettre à profit la taxonomie de Bloom et formuler clairement un objectif pédagogique</li>
+<li>Distinguer chacun des supports en formation</li>
+<li>Identifier la posture de formateur à adopter</li>
+</ul>
+</div>
+<p><strong>Synthèse</strong></p>
+<ul class="simple">
+<li>bon objectif péda: il est mesurable, réaliste, faisable, précis, simple et concis (taxonomie bloom)</li>
+<li>outil: de quel outil j’ai besoin pour quel objectif</li>
+</ul>
+<div class="section" id="travail-de-groupe">
+<h3>Travail de groupe<a class="headerlink" href="#travail-de-groupe" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>répartition des taches</li>
+</ul>
+<p>Bonnes pratiques:</p>
+<ul class="simple">
+<li>communication</li>
+<li>organisation</li>
+<li>posture individuelle</li>
+</ul>
+<p>Fiches mémos, réaliser les fiches mémos en début de formation (aprés obj pédas). Permet d’avoir une trame a partir de laquel écrire le contenue</p>
+</div>
+<div class="section" id="methodes-et-approches-pedas">
+<h3>Méthodes et approches pédas<a class="headerlink" href="#methodes-et-approches-pedas" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>4 grandes méthodes</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Pas forcement de meilleur, dépend des situations (temps, public cible, moyens …).</p>
+</div>
+<div class="section" id="expositive">
+<h4>Expositive<a class="headerlink" href="#expositive" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>Présentation</p>
+</div>
+<div class="section" id="demonstrative">
+<h4>Démonstrative<a class="headerlink" href="#demonstrative" title="Lien permanent vers cette rubrique">#</a></h4>
+</div>
+<div class="section" id="interrogative">
+<h4>Interrogative<a class="headerlink" href="#interrogative" title="Lien permanent vers cette rubrique">#</a></h4>
+</div>
+<div class="section" id="active">
+<h4>Active<a class="headerlink" href="#active" title="Lien permanent vers cette rubrique">#</a></h4>
+</div>
+</div>
+<div class="section" id="le-cycle-de-kolb">
+<h3>Le cycle de Kolb<a class="headerlink" href="#le-cycle-de-kolb" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>2 grands modèles pédagogiques</p>
+<div class="section" id="deductif">
+<h4>Déductif<a class="headerlink" href="#deductif" title="Lien permanent vers cette rubrique">#</a></h4>
+</div>
+<div class="section" id="inductif">
+<h4>Inductif<a class="headerlink" href="#inductif" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>PLus efficiace avec les adultes</p>
+</div>
+</div>
+<div class="section" id="recette-magique">
+<h3>Recette magique<a class="headerlink" href="#recette-magique" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Récupérer le guide de Julien</p>
+</div>
+</div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Apprentissage\Inge-Peda"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../IntroDL/IntroDL.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Le Digital Learning</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Analyse/Analyse.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Analyse</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fondamentaux">Fondamentaux</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#behaviorisme">BEHAVIORISME</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#constructivisme">CONSTRUCTIVISME</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#socio-constructivisme">SOCIO-CONSTRUCTIVISME</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#piloter-un-projet-de-formation">Piloter un projet de formation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-besoin">Le Besoin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ingenieurie-de-formation-vs-ingenieurie-pedagogique">Ingénieurie de Formation vs Ingénieurie pédagogique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-diapo-efficace">La Diapo efficace</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#le-modele-addie">Le modèle ADDIE</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-version-sydo">La version Sydo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#les-besoins">Les Besoins</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#type-de-formations">Type de formations</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#besoins-en-formation">Besoins en formation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercice">Exercice:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sceance-2">Scéance 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cahier-des-charges">Cahier des charges</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ingenieurie-pedagogique">Ingénieurie pédagogique</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sceance-3">Scéance 3</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#taxonomie-de-bloom">Taxonomie de Bloom</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-alignement-pedago">L’alignement pédago</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sceance-4">Scéance 4</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-d-evaluation">3 types d’évaluation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#description-du-type-d-evaluation">Description du type d’évaluation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contexte-d-utilisation-de-l-evaluation">Contexte d’utilisation de l’évaluation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#finalite-de-l-evaluation">Finalité de l’évaluation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-d-usage-un-exemple-reprenant">Cas d’usage, un exemple reprenant</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pertinence-d-utilisation-selon-les-modalites-et-le-contexte-d-apprentissage">Pertinence d’utilisation selon les modalités et le contexte d’apprentissage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sceance-5">Scéance 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pres-1">Pres 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pres-2">Pres 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-de-questions">Types de questions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sceance-6">Scéance 6</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#travail-de-groupe">Travail de groupe</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methodes-et-approches-pedas">Méthodes et approches pédas</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#expositive">Expositive</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#demonstrative">Démonstrative</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interrogative">Interrogative</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#active">Active</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-cycle-de-kolb">Le cycle de Kolb</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deductif">Déductif</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#inductif">Inductif</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recette-magique">Recette magique</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Vincent Deguin (with ❤️)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

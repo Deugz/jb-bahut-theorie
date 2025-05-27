@@ -1,0 +1,922 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="fr" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mécanismes d’apprentissage &#8212; DLM</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/flash-card.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/style-phone-button.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/.ipynb_checkpoints/custom_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/.ipynb_checkpoints/flash-card-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/.ipynb_checkpoints/style-phone-button-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/jb-bahut");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../_static/assets/scripts/flash-card.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Apprentissage/Apprentissage/mecanisme-apprentissage';</script>
+    <link rel="canonical" href="https://deugz.github.io/jb-bahut/_build/html/Apprentissage/Apprentissage/mecanisme-apprentissage.html" />
+    <link rel="shortcut icon" href="../../_static/Bahut-logo.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Motivation" href="Motivation/Motivation.html" />
+    <link rel="prev" title="Evaluation" href="../Inge-Peda/Evaluation/Evaluation.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/Bahut-logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/Bahut-logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/Encyclopedia-Home/build/html/index.html" title="Home" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-house"></i></span>
+            <label class="sr-only">Home</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/nb-profile/_build/html/intro.html" title="Profile" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-user"></i></span>
+            <label class="sr-only">Profile</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/ab-blog/_website/index.html" title="Blog" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-blog"></i></span>
+            <label class="sr-only">Blog</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io/nb-tools/_build/html/intro.html" title="Tools" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-screwdriver-wrench"></i></span>
+            <label class="sr-only">Tools</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://deugz.github.io" title="Forum" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-comments"></i></span>
+            <label class="sr-only">Forum</label></a>
+        </li>
+</ul></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../to-include.html">To Do</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Intro/La-Promo.html">La Promo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Intro/Plateforme/Site.html">Cette Plateforme</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🎓 Scéances</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../IntroDL/IntroDL.html">Le Digital Learning</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Inge-Peda/Inge-peda.html">Ingénierie pédagogique (ADDIE)</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Inge-Peda/Analyse/Analyse.html">Analyse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Inge-Peda/Design/Design.html">Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Inge-Peda/Developement/Developement.html">Dévelopement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Inge-Peda/Implementation/Implementation.html">Implementation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Inge-Peda/Evaluation/Evaluation.html">Evaluation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Mécanismes d’apprentissage</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Motivation/Motivation.html">Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Memorisation/Memorisation.html">Mémorisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Attention/Attention.html">Attention</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../IA/IA-intro.html">Introduction à l’IA</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Bonnes-pratiques/Bonnes-pratiques-main.html">Bonnes pratiques</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Bonnes-pratiques/Design/Design-main.html">Design</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Bonnes-pratiques/Design/UX.html">UX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Bonnes-pratiques/Design/UI.html">UI</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../Bonnes-pratiques/Design/Exos/Exo-main.html">Exercices</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Bonnes-pratiques/Design/Exos/Ortographe/Ortographe-main.html">Introduction à l’ortographe</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Bonnes-pratiques/Ressources/Ressources-chaudes.html">Concevoir des « ressources chaudes »</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Bonnes-pratiques/Accessibilite/Accessibilite.html">Accessibilité</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../EcocystemDLM.html">Ecocystem DLM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Webinaires/Webinaires-main.html">Webinaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../REX/REX-Main.html">REX</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🌍 Conception</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Conception/Conception-main.html">Conception</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Conception/Opquast/Opquast-main.html">Opquast</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🌍 Intelligence Collective</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Intelligence-collective/IC-main.html">Intelligence Collective</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Appendices/List.html">Listes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Appendices/Glossaire.html">Glossaire</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/Apprentissage/Apprentissage/mecanisme-apprentissage.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Mécanismes d’apprentissage</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quelle-s-approche-s-pour-apprehender-lapprentissage">Quelle(s) approche(s) pour appréhender l’apprentissage ?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#entre-theorie-et-pratique">Entre théorie et pratique</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-de-l-apprentissage">Théorie de l’apprentissage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quest-ce-que-lapprentissage">Qu’est-ce que l’apprentissage ?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#padlet-ressources">Padlet Ressources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-1">Session 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qu-est-ce-que-l-apprentissage">Qu’est-ce que l’apprentissage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#memorisation">Mémorisation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-2">Session 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#differents-types-de-memoires">Différents types de mémoires</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#memoire-a-court-terme">Mémoire a court terme</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#memoire-long-terme">Mémoire long terme</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#processus-de-memorisation">Processus de mémorisation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#encodage">Encodage</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stockage-et-consolidation">Stockage et consolidation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#restitution">Restitution</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution">Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effets-de-primaute-et-de-recence">Effets de primauté et de récence.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expertise">Expertise</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recommandations">Recommandations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-attention">L’attention</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#attention-divisee">Attention divisée</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rythme-circadien-et-vigilence">Rythme circadien et vigilence</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-cogni-ctml">Theorie cogni … CTML</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-d-incarnation">Théorie d’incarnation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="mecanismes-d-apprentissage">
+<h1>Mécanismes d’apprentissage<a class="headerlink" href="#mecanismes-d-apprentissage" title="Lien permanent vers cette rubrique">#</a></h1>
+<div class="section" id="quelle-s-approche-s-pour-apprehender-lapprentissage">
+<h2>Quelle(s) approche(s) pour appréhender l’apprentissage ?<a class="headerlink" href="#quelle-s-approche-s-pour-apprehender-lapprentissage" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="section" id="entre-theorie-et-pratique">
+<h3>Entre théorie et pratique<a class="headerlink" href="#entre-theorie-et-pratique" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Comprendre l’apprentissage suppose d’adopter plusieurs points de vue, apportées notamment par des disciplines comme les sciences cognitives ou la pédagogie. Plusieurs regards se croisent, d’une part celui du concepteur (et/ou formateur) et d’autre part, celui du chercheur, afin de constituer l’approche du pédagogue. De manière caricaturale, entre une vision <strong>idéale</strong> de l’apprentissage, apportée par le chercheur et un regard plus <strong>réel</strong>, apporté par les pratiques de terrain, il s’agit de chercher <strong>l’optimal</strong>, approche portée par la pédagogie.</p>
+<div class="figure align-default" id="approche-apprentissage">
+<a class="reference internal image-reference" href="../../_images/Approche.png"><img alt="../../_images/Approche.png" src="../../_images/Approche.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Les différents acteurs de l’apprentissage</span><a class="headerlink" href="#approche-apprentissage" title="Lien permanent vers cette image">#</a></p>
+</div>
+<div class="section" id="theorie-de-l-apprentissage">
+<h4>Théorie de l’apprentissage<a class="headerlink" href="#theorie-de-l-apprentissage" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Connectivisme / constructivisme (cf cours classe virtuelle)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="quest-ce-que-lapprentissage">
+<h2>Qu’est-ce que l’apprentissage ?<a class="headerlink" href="#quest-ce-que-lapprentissage" title="Lien permanent vers cette rubrique">#</a></h2>
+<p class="p-emphase2">Pour les sciences cognitives, l’apprentissage est processus global qui met en relation des opérations cognitives précises, telles que l’ATTENTION, la MÉMORISATION ou encore la MOTIVATION. </p>
+<br>
+<blockquote>
+<div>Ces mécanismes peuvent être étudiés spécifiquement. Mais il convient d’adopter également une perspective transversale, grâce à des théories plus globale, telle que la théorie cognitive de l’apprentissage multimédia de MAYER. Nous retenons d’ailleurs <strong>la définition de <a class="reference external" href="https://www.notion.so/a7b4d0ee2155409bb56406fa66182b93?pvs=21" rel="noopener noreferrer" target="_blank">MAYER</a></strong> concernant <strong>l’apprentissage :</strong></div></blockquote>
+<br>
+<a class="reference internal image-reference" href="../../_images/Définition_Mayer.png"><img alt="../../_images/De%CC%81finition_Mayer.png" src="../../_images/De%CC%81finition_Mayer.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="padlet-ressources">
+<h2>Padlet Ressources<a class="headerlink" href="#padlet-ressources" title="Lien permanent vers cette rubrique">#</a></h2>
+<br>
+<div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/d0ieorkjbtcm7sye" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe></p><div style="display:flex;align-items:center;justify-content:end;margin:0;height:28px"><a href="https://padlet.com?ref=embed" style="display:block;flex-grow:0;margin:0;border:none;padding:0;text-decoration:none" target="_blank"><div style="display:flex;align-items:center;"><img src="https://padlet.net/embeds/made_with_padlet_2022.png" width="114" height="28" style="padding:0;margin:0;background:0 0;border:none;box-shadow:none" alt="Made with Padlet"></div></a></div></div>
+</div>
+<div class="section" id="session-1">
+<h2>Session 1<a class="headerlink" href="#session-1" title="Lien permanent vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li>26/09/24 aprem</li>
+</ul>
+<div class="admonition-objectif-s-pedagogique-s admonition">
+<p class="first admonition-title">Objectif(s) pédagogique(s)</p>
+<ul class="last simple">
+<li>reprendre les objectifs (pas tout a fait les bons)</li>
+<li><strong>Identifier</strong> les mécanismes de l’apprentissage</li>
+<li>Lister des principes pour favoriser les mécanismes de l’apprentissage</li>
+<li>Justifier des choix pédagogiques à partir de théories concernant l’apprentissage</li>
+</ul>
+</div>
+<ul class="simple">
+<li>Youri: Thèse siffre (apprentissage multimédia) avec Sydo</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Récupérer les notes</p>
+</div>
+<div class="section" id="qu-est-ce-que-l-apprentissage">
+<h3>Qu’est-ce que l’apprentissage<a class="headerlink" href="#qu-est-ce-que-l-apprentissage" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Exercice ensemble</p>
+</div>
+<p class="emphase"></p>
+<ul class="simple">
+<li>IA permet de générer un aspect social dans l’apprentissage</li>
+</ul>
+<p>cognitif: processus qui permettent de traiter notre environnement (language ..)</p>
+<p>Intelligence: capacité d’adaptation a notre environnement.</p>
+<ul class="simple">
+<li>Métacognition</li>
+</ul>
+<p>Regard sur nos processus d’apprentissage. Comment on apprend</p>
+<p>Confrontation entre ce que l’on sait déja et notre environement</p>
+<ul class="simple">
+<li>Adulte: difficulté a déconstruire un mauvais apprentissage</li>
+</ul>
+<p>Apprentissage reflexif</p>
+<p>innée ou aquis (ex Language vs langue)</p>
+<p>Chercheur: Franck Ramus (Tedx conférence)</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">3 axes</p>
+</div>
+</div>
+<div class="section" id="memorisation">
+<h3>Mémorisation<a class="headerlink" href="#memorisation" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>La consigne oriente l’attention de nos apprenants</p>
+</div>
+</div>
+<div class="section" id="session-2">
+<h2>Session 2<a class="headerlink" href="#session-2" title="Lien permanent vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li>27/09/24 journée</li>
+</ul>
+<div class="admonition-objectif-s-pedagogique-s admonition">
+<p class="first admonition-title">Objectif(s) pédagogique(s)</p>
+<ul class="last simple">
+<li>Identifier les mécanismes de l’apprentissage</li>
+<li>Lister des principes pour favoriser les mécanismes de l’apprentissage</li>
+<li>Justifier des choix pédagogiques à partir de théories concernant l’apprentissage</li>
+</ul>
+</div>
+<ul class="simple">
+<li>Suite de Mémorisation</li>
+</ul>
+<div class="section" id="differents-types-de-memoires">
+<h3>Différents types de mémoires<a class="headerlink" href="#differents-types-de-memoires" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Court terme/ long terme</p>
+<p>visuel, tout ca: plutot des canaux d’entrée vers la mémoire</p>
+<div class="section" id="memoire-a-court-terme">
+<h4>Mémoire a court terme<a class="headerlink" href="#memoire-a-court-terme" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>Limité en terme de durée et quantité</p>
+<p>On peut retenir 7 information (+-2). Empan mnésique (miller 1956) -</p>
+<p>Objectif répéter</p>
+<p>chunk - favoriser la catégorisation de l’information - structurer l’information</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Trouver shéma qui explique lien mémoire courte et long terme</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">retrouver vidéo des singes mémoire court terme</p>
+</div>
+<p>Mémoire court terme = mémoire de travail</p>
+</div>
+<div class="section" id="memoire-long-terme">
+<h4>Mémoire long terme<a class="headerlink" href="#memoire-long-terme" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>éléments forts émotionnelements auront plus de facilités a s’ancrer dans la mémoire a long terme</p>
+</div>
+</div>
+<div class="section" id="processus-de-memorisation">
+<h3>Processus de mémorisation<a class="headerlink" href="#processus-de-memorisation" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="section" id="encodage">
+<h4>Encodage<a class="headerlink" href="#encodage" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>Onde cérébrale, on fonction du temp auquel elle se déclenche (tot ou tard), on sait si l’information va etre mémorisé ou pas</p>
+</div>
+<div class="section" id="stockage-et-consolidation">
+<h4>Stockage et consolidation<a class="headerlink" href="#stockage-et-consolidation" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>Réseau de neurone - Association</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Implication péda: l’apprenant arrive toujours avec un background qu’on peut utiliser, des prérequis</p>
+<ul class="last simple">
+<li>biais cognitifs</li>
+<li>questionnaire pour mieux connaitre mon apprenant</li>
+</ul>
+</div>
+<p>A partir d’une 20 d’année, les fonctions cognitifs diminuent</p>
+</div>
+<div class="section" id="restitution">
+<h4>Restitution<a class="headerlink" href="#restitution" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>Fait comprendre au cerveau qu’on a besoin de cette information - evaluation</p>
+</div>
+</div>
+<div class="section" id="distribution">
+<h3>Distribution<a class="headerlink" href="#distribution" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li>Microlearning</li>
+</ul>
+</div>
+<div class="section" id="effets-de-primaute-et-de-recence">
+<h3>Effets de primauté et de récence.<a class="headerlink" href="#effets-de-primaute-et-de-recence" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Bien introduire le propos, et la conclusion</p>
+</div>
+<div class="section" id="expertise">
+<h3>Expertise<a class="headerlink" href="#expertise" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>effet inversé de la pédagogie en fonction de l’expertise</p>
+<p>situation de découverte = construction de tes conaissance par toi même</p>
+</div>
+<div class="section" id="recommandations">
+<h3>Recommandations<a class="headerlink" href="#recommandations" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Testing effect</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Créer une boite avec questions que l’on implémente dans différents niveau (peut etre faire avant chaque pause)</p>
+<p class="last">Boite de leitner</p>
+</div>
+</div>
+<div class="section" id="l-attention">
+<h3>L’attention<a class="headerlink" href="#l-attention" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Soigner les consignes</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Inclure les experiences de Youri</p>
+</div>
+<div class="section" id="attention-divisee">
+<h4>Attention divisée<a class="headerlink" href="#attention-divisee" title="Lien permanent vers cette rubrique">#</a></h4>
+</div>
+<div class="section" id="rythme-circadien-et-vigilence">
+<h4>Rythme circadien et vigilence<a class="headerlink" href="#rythme-circadien-et-vigilence" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Checker les méthodes d’entrainement pour augmenter l’attention</p>
+</div>
+<ul class="simple">
+<li>gestion des pauses</li>
+</ul>
+<p>système 1 / système 2</p>
+</div>
+</div>
+<div class="section" id="theorie-cogni-ctml">
+<h3>Theorie cogni … CTML<a class="headerlink" href="#theorie-cogni-ctml" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">cf sydo pour liste d’article</p>
+</div>
+<ul class="simple">
+<li>3 hypothèses</li>
+</ul>
+<p>Charge cognitive</p>
+<p>3 types de cout:</p>
+<ul class="simple">
+<li>charge intrinsèque (ce qui permet de comprendre le materiel d’apprentissage (a vérifier), fonction de l’expertise, un expert mettra moins d’effort)</li>
+<li>charge extrinsèque (exemple, portable quand on conduit, bruit visuel)</li>
+<li>charge pertinente ou utile (permet d’intégrer en mémoire a long terme, appropriation)</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Principe de design associés</p>
+</div>
+<ul>
+<li><p class="first">principe de cohérence</p>
+</li>
+<li><p class="first">principe de personnalisation</p>
+<p>Privilégier le tutoiment</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Outils</p>
+<ul class="last simple">
+<li>Eleven lab, murph, synthésia</li>
+</ul>
+</div>
+<div class="section" id="theorie-d-incarnation">
+<h4>Théorie d’incarnation<a class="headerlink" href="#theorie-d-incarnation" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>…</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>suno</p>
+<ul class="last simple">
+<li>générer une musique (pas mal pour générer des musique pour summariser les concepts clés)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Apprentissage\Apprentissage"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../Inge-Peda/Evaluation/Evaluation.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Evaluation</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Motivation/Motivation.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Motivation</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quelle-s-approche-s-pour-apprehender-lapprentissage">Quelle(s) approche(s) pour appréhender l’apprentissage ?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#entre-theorie-et-pratique">Entre théorie et pratique</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-de-l-apprentissage">Théorie de l’apprentissage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quest-ce-que-lapprentissage">Qu’est-ce que l’apprentissage ?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#padlet-ressources">Padlet Ressources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-1">Session 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qu-est-ce-que-l-apprentissage">Qu’est-ce que l’apprentissage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#memorisation">Mémorisation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-2">Session 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#differents-types-de-memoires">Différents types de mémoires</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#memoire-a-court-terme">Mémoire a court terme</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#memoire-long-terme">Mémoire long terme</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#processus-de-memorisation">Processus de mémorisation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#encodage">Encodage</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stockage-et-consolidation">Stockage et consolidation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#restitution">Restitution</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution">Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effets-de-primaute-et-de-recence">Effets de primauté et de récence.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expertise">Expertise</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recommandations">Recommandations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-attention">L’attention</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#attention-divisee">Attention divisée</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rythme-circadien-et-vigilence">Rythme circadien et vigilence</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-cogni-ctml">Theorie cogni … CTML</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie-d-incarnation">Théorie d’incarnation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Vincent Deguin (with ❤️)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -13,37 +13,44 @@ parts:
     - file: Intro/Plateforme/Site
   - caption: 🎓 Scéances
     chapters:
-    - file: Seance/IntroDL/IntroDL
-    - file: Seance/Inge-Peda/Inge-peda
+    - file: Apprentissage/IntroDL/IntroDL
+    - file: Apprentissage/Inge-Peda/Inge-peda
       sections:
-      - file: Seance/Inge-Peda/Analyse/Analyse
-      - file: Seance/Inge-Peda/Design/Design
-      - file: Seance/Inge-Peda/Developement/Developement
-      - file: Seance/Inge-Peda/Implementation/Implementation
-      - file: Seance/Inge-Peda/Evaluation/Evaluation
-    - file: Seance/Apprentissage/mecanisme-apprentissage
+      - file: Apprentissage/Inge-Peda/Analyse/Analyse
+      - file: Apprentissage/Inge-Peda/Design/Design
+      - file: Apprentissage/Inge-Peda/Developement/Developement
+      - file: Apprentissage/Inge-Peda/Implementation/Implementation
+      - file: Apprentissage/Inge-Peda/Evaluation/Evaluation
+    - file: Apprentissage/Apprentissage/mecanisme-apprentissage
       sections:
-      - file: Seance/Apprentissage/Motivation/Motivation
-      - file: Seance/Apprentissage/Memorisation/Memorisation
-      - file: Seance/Apprentissage/Attention/Attention      
-    - file: Seance/IA/IA-intro
-    - file: Seance/Bonnes-pratiques/Bonnes-pratiques-main
+      - file: Apprentissage/Apprentissage/Motivation/Motivation
+      - file: Apprentissage/Apprentissage/Memorisation/Memorisation
+      - file: Apprentissage/Apprentissage/Attention/Attention      
+    - file: Apprentissage/IA/IA-intro
+    - file: Apprentissage/Bonnes-pratiques/Bonnes-pratiques-main
       sections:
-      - file: Seance/Bonnes-pratiques/Design/Design-main
+      - file: Apprentissage/Bonnes-pratiques/Design/Design-main
         sections:
-        - file: Seance/Bonnes-pratiques/Design/UX
-        - file: Seance/Bonnes-pratiques/Design/UI
-        - file: Seance/Bonnes-pratiques/Design/Exos/Exo-main
+        - file: Apprentissage/Bonnes-pratiques/Design/UX
+        - file: Apprentissage/Bonnes-pratiques/Design/UI
+        - file: Apprentissage/Bonnes-pratiques/Design/Exos/Exo-main
           sections:
-          - file: Seance/Bonnes-pratiques/Design/Exos/Ortographe/Ortographe-main
-      - file: Seance/Bonnes-pratiques/Ressources/Ressources-chaudes
-      - file: Seance/Bonnes-pratiques/Accessibilite/Accessibilite 
-  - caption: 🌍 Extras
+          - file: Apprentissage/Bonnes-pratiques/Design/Exos/Ortographe/Ortographe-main
+      - file: Apprentissage/Bonnes-pratiques/Ressources/Ressources-chaudes
+      - file: Apprentissage/Bonnes-pratiques/Accessibilite/Accessibilite 
+    - file: Apprentissage/EcocystemDLM
+    - file: Apprentissage/Webinaires/Webinaires-main
+    - file: Apprentissage/REX/REX-Main
+  - caption: 🌍 Conception
     chapters:
-    - file: Extras/EcocystemDLM
-    - file: Extras/Webinaires/Webinaires-main
-    - file: Extras/REX/REX-Main
+    - file: Conception/Conception-main
+      sections:
+      - file: Conception/Opquast/Opquast-main
+  - caption: 🌍 Intelligence Collective
+    chapters:
+    - file: Intelligence-collective/IC-main
   - caption: Appendices
     chapters:
     - file: Appendices/List
     - file: Appendices/Glossaire
+
